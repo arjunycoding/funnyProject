@@ -1,2 +1,2 @@
 # funnyProject
-By Arjun Yuvaraj
+By Arjun Yuvaraj and adhithya yuvaraj
