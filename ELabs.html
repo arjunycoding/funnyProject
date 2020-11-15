@@ -5,7 +5,32 @@
     <title>ELabs</title>
     <link rel='icon' href='yuvaraj-company.png' type='image/x-icon'/>
 </head>
+<script>
+    var padZero = function(num) {
+        var numDigits = 2;
+        var n = abs(num);
+        var zeros = max(-2, numDigits - floor(n).toString().length );
+        var zeroString = pow(10, zeros).toString().substr(1);
+        return zeroString + n;
+    };
 
+    draw = function() {
+
+      var s = second();
+      var m = minute();
+      var h = hour();
+
+        // clock base
+        var button = 15;
+        var tp = 200;
+        var tp1 = 100;
+
+      //Time
+      textSize(80);
+      text(padZero(h) + ":" + padZero(m) + ":" + padZero(s), tp1 - 50, tp);
+
+};
+</script>
 
 <style>
 
@@ -138,6 +163,7 @@
         }
 
         th{
+        
             border-bottom:2px solid black;
             border-top:2px solid #999;
         }
@@ -293,6 +319,7 @@
 
       <div>
 
+          <h2>Money</h2>
           <p>Eraser money is very important. Fist of all,to represent this
               you use a $ sign. The money is a lot like U.S dollars. Their is a 1,5,10
               ,50,100 and 1000 bill. Their is also a 1,5,10,50,100 and 1000 cent coin.
@@ -322,6 +349,8 @@
               to run and each make a small speech. Then everyone will vote for who they want
               in those three poistions. The top three will be in the government.</p>
       </div>
+
+
 <div class="info">
     <h2 id="next">What is next?</h2>
     <p> Well you know the basics of the erasers so what is next? Start building
@@ -329,6 +358,9 @@
     Sky's the limit of what you can make. </p>
 
 </div>
+
+
+
 
 
 
