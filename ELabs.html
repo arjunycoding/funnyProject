@@ -23,7 +23,7 @@
 
             }
 
-            input[type=text] {
+            input[type=text].search {
 
                   border-radius: 4px;
                   color:white;
@@ -165,12 +165,15 @@
         }
 
         .gray{
+
             background:#DCDCDC;
         }
 
 
+
     </style>
 <body>
+
 
 <!-- Top Bar -->
 <div  class = "topBar">
@@ -181,7 +184,7 @@
     <button class = "topb pics/">YOUR STATUS/PROFILE</button>
     <button class = "topb pics/"> YOUR COMMUNTITY</button>
     <button class = "topb pics/">SETTINGS</button>
-    <input type="text" name="search" placeholder="Search..">
+    <input class = "search" type="text" name="search" placeholder="Search..">
 
 
 </div>
@@ -222,11 +225,30 @@
 </div>
 
 
-
-
-
 <!--Super Erasers!!!-->
 <div class="I-info">
+<!--login-->
+    <form id = "login" action = "/login" method = "post">
+
+        <div class = "two-thirds column" id = "main">
+
+            <fieldset>
+
+                <legend>login</legend>
+                <lable for = "username">Username:</lable>
+                <input type = "text" id = "username" name = "username"/>
+                <br/>
+                <lable for = "password">Password:</lable>
+                <input type = "text" id = "password" name = "password"/>
+                <input type = "submit" value = "login"/>
+
+            </fieldset>
+
+        </div>
+
+    </form>
+    <br/>
+
     <div class="welcome">
         <h1> Super Erasers!!!</h1>
 
@@ -421,13 +443,13 @@
             </select>
         </div>
     </div>
+    <a href = "mailto: arjunycoding@gemail.com">Email Arjun</a>
+    <br/>
 
 
 </div>
 
 
-<form id = ""></form>
-<a href = "mailto: arjunycoding@gemail.com">Email Arjun</a>
 
 </body>
 </html>
