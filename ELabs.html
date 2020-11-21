@@ -30,7 +30,7 @@
                   width: 130px;
                   font-size: 16px;
                   border:2px solid white;
-                  background-color: black;
+                  background-color: white;
                   background-position: 10px 10px;
                   padding: 10px 20px 12px 40px;
                   transition: width 0.4s ease-in-out;
@@ -148,7 +148,7 @@
        }
 
 
-        button{
+        button.topbar{
             width:10px;
         }
 
@@ -468,5 +468,100 @@
 });
 }());
 </script>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">House</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Suit</button>
+</div>
+
+<div id="London" class="tabcontent">
+
+    <h2 id="house">Eraser house</h2>
+    <p> Watch the video and see the slideshow</p>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/VDJI_DmvBmw"></iframe>
+
+
+</div>
+
+<div id="Paris" class="tabcontent">
+
+    <h2 id="suit">Eraser suit</h2>
+
+
+
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/v95DJebIFos"></iframe>
+    <br>
+
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+</body>
 </html>
 
