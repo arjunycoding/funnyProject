@@ -284,25 +284,30 @@
         2.One eraser<br>
         3.$1000 eraser dollars.<br>
         4.You also need glue,tape, scissors and markers!<br>
-        Now were should we start? What should we make first?
-        Let us start with the eraser cover!
+        Now were should we start? Click the tab that says "Suit" then the one that says house!
     </p>
-    <h2 id="suit">Eraser suit</h2>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">House</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Suit</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+
+        <h2 id="house">Eraser house</h2>
+        <p> Watch the video and see the slideshow</p>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/VDJI_DmvBmw"></iframe>
 
 
+    </div>
 
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/v95DJebIFos"></iframe>
-    <br>
+    <div id="Paris" class="tabcontent">
 
-</div>
-<div class="info">
+        <h2 id="suit">Eraser suit</h2>
+        <p> Watch the video and see the slideshow</p>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/v95DJebIFos"></iframe>
+        <br>
 
-    <!--Eraser house-->
-
-    <h2 id="house">Eraser house</h2>
-    <p> Watch the video and see the slideshow</p>
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/VDJI_DmvBmw"></iframe>
-    <br>
+    </div>
     <h2>Set up Complete!</h2>
     <p>You have now built your own house and eraser! Now you need to do these
      few questions first!</p>
@@ -312,6 +317,7 @@
         <input type="text" id="email" name="email" placeholder="email"><br/>
 
     </form>
+
 
 
     Take pictures of eraser house and suit using the camera tool below. Or you
@@ -467,6 +473,23 @@
         document.getElementById('main').textContent = msg;
 });
 }());
+
+
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
 </script>
 </html>
 
@@ -475,7 +498,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-body {font-family: Arial;}
+
 
 /* Style the tab */
 .tab {
@@ -518,48 +541,8 @@ body {font-family: Arial;}
 <body>
 
 
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'London')">House</button>
-    <button class="tablinks" onclick="openCity(event, 'Paris')">Suit</button>
-</div>
-
-<div id="London" class="tabcontent">
-
-    <h2 id="house">Eraser house</h2>
-    <p> Watch the video and see the slideshow</p>
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/VDJI_DmvBmw"></iframe>
 
 
-</div>
-
-<div id="Paris" class="tabcontent">
-
-    <h2 id="suit">Eraser suit</h2>
-
-
-
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/v95DJebIFos"></iframe>
-    <br>
-
-</div>
-
-
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
 
 
 </body>
