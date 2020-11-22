@@ -5,7 +5,23 @@
     <title>ELabs</title>
     <link rel='icon' href='yuvaraj-company.png' type='image/x-icon'/>
 </head>
-
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
 
 <style>
 
@@ -176,11 +192,16 @@
             border: 4px solid black;
         }
 
+        .time {
+        float:right;
+        font-size:
+        }
+
 
 
 
     </style>
-<body>
+<body onload="startTime()">
 
 
 <!-- Top Bar -->
@@ -192,7 +213,10 @@
     <button class = "topb pics/">YOUR STATUS/PROFILE</button>
     <button class = "topb pics/"> YOUR COMMUNTITY</button>
     <button class = "topb pics/">SETTINGS</button>
+    <button class = "topb time" id="txt"></button>
     <input class = "search" type="text" name="search" placeholder="Search..">
+
+
 
 
 </div>
@@ -266,7 +290,8 @@
     </div>
 
 
-
+    <br/>
+    <br/>
 
     <div class="tab">
         <button class="tablinks" onclick="eraser(event, 'introducing')">Intro</button>
@@ -548,4 +573,6 @@ function eraser(evt, cityName) {
 
 </body>
 </html>
+
+
 
