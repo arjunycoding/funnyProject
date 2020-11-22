@@ -287,7 +287,7 @@
         Now were should we start? Click the tab that says "Suit" then the one that says house!
     </p>
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">House</button>
+        <button class="tablinks" onclick="openCity(event, '')">House</button>
         <button class="tablinks" onclick="openCity(event, 'Paris')">Suit</button>
     </div>
 
@@ -460,6 +460,8 @@
 </body>
 
 <script>
+
+// login
     (function(){
 
     var form = document.getElementById('login');
@@ -475,7 +477,6 @@
 }());
 
 
-
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -489,16 +490,6 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
-</script>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-
 
 /* Style the tab */
 .tab {
@@ -536,15 +527,31 @@ function openCity(evt, cityName) {
   border: 1px solid #ccc;
   border-top: none;
 }
-</style>
-</head>
-<body>
 
+// saying hi
 
+var today = new Date();
+var hourNow = today.getHour();
+var greeting;
 
+if (hourNow > 18) {
+    greeting = "good morning";
+} else if (hourNow > 12){
+    greeting = "good evening";
+} else (hourNow > 0) {
+    greeting = "Welcome";
+}
+document.write(greeting);
 
-
-
-</body>
+</script>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+
 
