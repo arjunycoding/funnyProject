@@ -123,7 +123,7 @@ function checkTime(i) {
        margin:2% 10% 0% 2%;
        padding:1%;
        border:3px solid black;
-       width:135%
+       width:100%
 
        }
        .I-info{
@@ -133,7 +133,7 @@ function checkTime(i) {
        margin:5% 10% 0% 2%;
        padding:1%;
        border:3px solid black;
-       width:135%
+       width:100%
 
        }
 
@@ -251,6 +251,7 @@ function checkTime(i) {
         <button class="tablinks" onclick="eraser(event, 'starting')">Start</button>
         <button class="tablinks" onclick="eraser(event, 'Paris')">Suit</button>
         <button class="tablinks" onclick="eraser(event, 'London')">House</button>
+        <button class="tablinks" onclick="eraser(event, 'complete')">Start up Complete!</button>
     </div>
     <div id="introducing" class="tabcontent"><h2 id="intro">Intro</h2>
         <p >So welcome to the Super Erasers article! You might think “Why are erasers
@@ -287,6 +288,7 @@ function checkTime(i) {
         <br>
 
     </div>
+    <div id="complete" class="tabcontent">
     <h2>Set up Complete!</h2>
     <p>You have now built your own house and eraser! Now you need to do these
      few questions first!</p>
@@ -301,8 +303,16 @@ function checkTime(i) {
 
     Take pictures of eraser house and suit using the camera tool below. Or you
     can upload a file.
+</div>
+    <div class="tab">
+        <button class="tablinks" onclick="eraser(event, 'jobs')">Jobs</button>
+        <button class="tablinks" onclick="eraser(event, '$$$')">Eraser Money</button>
+        <button class="tablinks" onclick="eraser(event, 'politics')">Eraser Money</button>
+        <button class="tablinks" onclick="eraser(event, 'next??')">What is next?</button>
+    </div>
 
-    <h2 id="jobs">Jobs</h2>
+    <div id="jobs" class="tabcontent">
+    <h2 >Jobs</h2>
     <p >We are now going to go through each and every job that you can do.
         It will help if you are doing this with some friends.
         It will develop a community!</p>
@@ -353,27 +363,14 @@ function checkTime(i) {
         </tr>
         </tbody>
     </table>
+</div>
 
-    </ol>
 
-    <div>
-        <label for="country">So do you wnat us to know your job well fill it in the box below!</label>
-        <div class="col-75">
-            <select id="country" name="country">
-                <option value="Fashion Designer	">Fashion Designer</option>
-                <option value="Carpenter">Carpenter</option>
-                <option value="Inside House guy	">Inside House guy	</option>
-                <option value="Artist">Artist</option>
-                <option value="Doctor">Doctor</option>
-                <option value="Banker">Banker</option>
-                <option value="Inventor">Inventor</option>
-            </select>
-        </div>
-    </div>
+
 
 
     <!--Money-->
-
+<div id="$$$" class="tabcontent"
     <h2>Money</h2>
     <p>Eraser money is very important. Fist of all,to represent this
         you use a $ sign. The money is a lot like U.S dollars. Their is a 1,5,10
@@ -382,21 +379,22 @@ function checkTime(i) {
         be secret. Eraser money looks
         like this: and coins look like this:</p>
 
-
+</div>
 
     <!--Politics-->
-
-    <h2 id = "Politics">Politics</h2>
+<div id="politics" class="tabcontent">
+    <h2 >Politics</h2>
 
   <p> Basically in the government their is just the president. You vote just how you
   reguallry would and any number of people will run but only one will win. He will get to decide
   what to do in a communtiy.</p>
+    </div>
 </div>
 
 
 <!--What is next?-->
+<div id="next??" class="tabcontent">
 
-<div class="info">
     <h2 id="next">What is next?</h2>
     <p>Now you know how to build your communtiy! Start building it! Make a
          join code.
@@ -428,7 +426,7 @@ function checkTime(i) {
             </select>
         </div>
     </div>
-    <a href = "mailto: arjunycoding@gemail.com">Email Arjun</a>
+    <a href = "mailto: arjunycoding@gmail.com">Email Arjun</a>
     <br/>
 
 
