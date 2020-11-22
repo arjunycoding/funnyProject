@@ -288,8 +288,8 @@
     </p>
     <div class="tab">
         <button class="tablinks"
-        <button class="tablinks" onclick="openCity(event, 'London')">House</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Suit</button>
+        <button class="tablinks" onclick="eraser(event, 'London')">House</button>
+        <button class="tablinks" onclick="eraser(event, 'Paris')">Suit</button>
     </div>
 
     <div id="London" class="tabcontent">
@@ -477,7 +477,7 @@
 
 
 
-function openCity(evt, cityName) {
+function eraser(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
