@@ -118,26 +118,7 @@ function checkTime(i) {
        padding:10px;
        }
 
-       .info{
 
-       background-color:white;
-       color:black;
-       margin:2% 10% 0% 2%;
-       padding:1%;
-       border:3px solid black;
-       width:100%
-
-       }
-       .I-info{
-
-       background-color:white;
-       color:black;
-       margin:5% 10% 0% 2%;
-       padding:1%;
-       border:3px solid black;
-       width:100%
-
-       }
 
 
 
@@ -216,6 +197,12 @@ function checkTime(i) {
   border: 1px solid #ccc;
   border-top: none;
 }
+.middle{background-color:white;
+       color:black;
+       margin:2% 10% 0% 2%;
+       padding:1%;
+       border:3px solid black;
+       width:100%}
 
 
 
@@ -259,10 +246,10 @@ function checkTime(i) {
             <fieldset>
 
                 <legend>login</legend>
-                <lable for = "username">Username:</lable>
+                <label for = "username">Username:</label>
                 <input type = "text" id = "username" name = "username"/>
                 <br/>
-                <lable for = "pwd">Password:</lable>
+                <label for = "pwd">Password:</label>
                 <input type = "password" id = "pwd" name = "pwd"/>
                 <br/>
                 <br/>
@@ -343,6 +330,7 @@ function checkTime(i) {
     Take pictures of eraser house and suit using the camera tool below. Or you
     can upload a file.
 </div>
+    <div class="middle">
     <div class="tab">
         <button class="tablinks" onclick="eraser(event, 'jobs')">Jobs</button>
         <button class="tablinks" onclick="eraser(event, '$$$')">Eraser Money</button>
@@ -471,10 +459,10 @@ function checkTime(i) {
     <br/>
 </div>
 
+
+
 </div>
-
-
-
+</div>
 </body>
 </html>
 <script>
@@ -569,8 +557,6 @@ function eraser(evt, cityName) {
 <!--}-->
 <!--</script>-->
 
-</body>
-</html>
 
 
 
