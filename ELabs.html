@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>ELabs</title>
     <link rel='icon' href='yclogo.png' type='image/x-icon'/>
 </head>
+
 <script>
 function startTime() {
   var today = new Date();
@@ -178,6 +180,43 @@ function checkTime(i) {
         border:black;
         }
 
+        /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
 
 
 
@@ -194,7 +233,7 @@ function checkTime(i) {
     <button class = "topb">ARTICLES</button>
     <button class = "topb"> YOUR ES-LABS</button>
     <button class = "topb pics/">YOUR STATUS/PROFILE</button>
-    <button class = "topb pics/"> YOUR COMMUNITITY</button>
+    <button class = "topb pics/"> YOUR COMMUNTITY</button>
     <button class = "topb pics/">SETTINGS</button>
     <button class = "time" id="txt"></button>
     <input class = "search" type="text" name="search" placeholder="Search..">
@@ -220,10 +259,10 @@ function checkTime(i) {
             <fieldset>
 
                 <legend>login</legend>
-                <label for = "username">Username:</label>
+                <lable for = "username">Username:</lable>
                 <input type = "text" id = "username" name = "username"/>
                 <br/>
-                <label for = "pwd">Password:</label>
+                <lable for = "pwd">Password:</lable>
                 <input type = "password" id = "pwd" name = "pwd"/>
                 <br/>
                 <br/>
@@ -391,7 +430,7 @@ function checkTime(i) {
   reguallry would and any number of people will run but only one will win. He will get to decide
   what to do in a communtiy.</p>
     </div>
-</div>
+
 
 
 <!--What is next?-->
@@ -403,11 +442,11 @@ function checkTime(i) {
     so our webesite can reconize it! Then people will be able to join. Remember to
         have jobs
         people can purchase things. Like art from artist or houses from carpentars.
-        Want to join a communitiy? Then write the join code below!
-        Choose a job you want to be in...the pay will be the same. Make sure to
+        Want to join a communtiy? Then write the join code below!
+        Choose a job you want to be in...the pay will be the same. Make sureto
         keep some money and have at least one person be a banker. Sort all of these
         out with the person who made the communtiy you want to join. If you are making
-        a communitiy-these issues will come later.
+        a communtiy-these issues will come later.
 
     </p>
 
@@ -430,14 +469,14 @@ function checkTime(i) {
     </div>
     <a href = "mailto: arjunycoding@gmail.com">Email Arjun</a>
     <br/>
-
+</div>
 
 </div>
 
 
 
-
-
+</body>
+</html>
 <script>
     (function(){
 
@@ -470,52 +509,71 @@ function eraser(evt, cityName) {
 }
 
 </script>
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<title>W3.CSS</title>-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<!--&lt;!&ndash;<style>&ndash;&gt;-->
+<!--&lt;!&ndash;.mySlides {display:none}&ndash;&gt;-->
+<!--&lt;!&ndash;.w3-left, .w3-right, .w3-badge {cursor:pointer}&ndash;&gt;-->
+<!--&lt;!&ndash;.w3-badge {height:13px;width:13px;padding:0}&ndash;&gt;-->
+<!--&lt;!&ndash;</style>&ndash;&gt;-->
+<!--<body>-->
+
+<!--<div class="w3-container">-->
+<!--    <h2>Slideshow Indicators</h2>-->
+<!--    <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>-->
+<!--</div>-->
+
+<!--<div class="w3-content w3-display-container" style="max-width:800px">-->
+<!--    <img class="mySlides" src="yclogo.png" style="width:100%">-->
+<!--    <img class="mySlides" src="yclogo.png" style="width:100%">-->
+<!--    <img class="mySlides" src="yclogo.png" style="width:100%">-->
+<!--    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">-->
+<!--        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>-->
+<!--        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>-->
+<!--        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>-->
+<!--        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>-->
+<!--        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--var slideIndex = 1;-->
+<!--showDivs(slideIndex);-->
+
+<!--function plusDivs(n) {-->
+<!--  showDivs(slideIndex += n);-->
+<!--}-->
+
+<!--function currentDiv(n) {-->
+<!--  showDivs(slideIndex = n);-->
+<!--}-->
+
+<!--function showDivs(n) {-->
+<!--  var i;-->
+<!--  var x = document.getElementsByClassName("mySlides");-->
+<!--  var dots = document.getElementsByClassName("demo");-->
+<!--  if (n > x.length) {slideIndex = 1}-->
+<!--  if (n < 1) {slideIndex = x.length}-->
+<!--  for (i = 0; i < x.length; i++) {-->
+<!--    x[i].style.display = "none";-->
+<!--  }-->
+<!--  for (i = 0; i < dots.length; i++) {-->
+<!--    dots[i].className = dots[i].className.replace(" w3-white", "");-->
+<!--  }-->
+<!--  x[slideIndex-1].style.display = "block";-->
+<!--  dots[slideIndex-1].className += " w3-white";-->
+<!--}-->
+<!--</script>-->
+
 </body>
 </html>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
 
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-</style>
-</head>
-<body>
