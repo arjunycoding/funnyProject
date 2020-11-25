@@ -198,22 +198,20 @@ function checkTime(i) {
   border-top: none;
 }
 .middle{
-border:3px solid black;
        background-color:white;
        color:black;
-       width:100%
-       margin:2% 0% 0% 0%;
-       }
+       width:100%}
 .start{
-background-color:white;
-      color:black;
+       background-color:white;
+       color:black;
        margin:2% 10% 0% 2%;
        padding:1%;
        border:3px solid black;
        width:100%}
-       .login{
-background-color:white;
-      color:black;
+
+       .middle{
+       background-color:white;
+       color:black;
        margin:2% 10% 0% 2%;
        padding:1%;
        border:3px solid black;
@@ -252,7 +250,7 @@ background-color:white;
 
 
 <!--Super Erasers!!!-->
-<div class="login">
+<div class="start">
 <!--login-->
     <form id = "login" action = "/login" method = "post">
 
@@ -275,7 +273,6 @@ background-color:white;
         </div>
 
     </form>
-</div>
     <br/>
 
     <div class="welcome">
@@ -287,7 +284,7 @@ background-color:white;
 
     <br/>
     <br/>
-<div class="start">
+
     <div class="tab">
         <button class="tablinks" onclick="eraser(event, 'introducing')">Intro</button>
         <button class="tablinks" onclick="eraser(event, 'starting')">Start</button>
@@ -346,9 +343,8 @@ background-color:white;
     Take pictures of eraser house and suit using the camera tool below. Or you
     can upload a file.
 </div>
-    <br/>
-    <br/>
-    <br/>
+</div>
+
     <div class="middle">
 
     <div class="tab">
@@ -517,11 +513,6 @@ function eraser(evt, cityName) {
 }
 
 </script>
-
-
-
-
-
 
 
 
