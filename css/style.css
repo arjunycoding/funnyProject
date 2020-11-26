@@ -78,19 +78,14 @@
 
         .time {
             float:right;
-            font-size:3em;
+            font-size:40px;
             background:black;
             color:white;
             border:black;
             font-family:;
         }
 
-        .time:hover{
-            font-style: italic;
-            font-size:2em;
-            font-family:cursive,"Comic Sans MS","serif";
-            color:#FF3E00;
-        }
+
 
        .login{
            background-color:white;
