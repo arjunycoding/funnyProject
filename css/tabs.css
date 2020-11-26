@@ -22,11 +22,14 @@
         /* Change background color of buttons on hover */
         .tab button:hover {
             background-color: #ddd;
+            font-style: italic;
+            font-family:cursive,"Comic Sans MS","serif";
         }
 
         /* Create an active/current tablink class */
         .tab button.active {
-            background-color: #ccc;
+            background-color:#FF3E00;
+
         }
 
         /* Style the tab content */
@@ -53,5 +56,4 @@
            background-color:white;
            color:black;
            width:100%;
-           margin:2% 10% 0% 2%;
        }
