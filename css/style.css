@@ -100,3 +100,11 @@
            border:3px solid black;
            width:100%;
        }
+
+       .compleat{
+                   width: 50%;
+                   float: right;
+                   margin-right: 6px;
+                   margin-bottom: 6px;
+
+               }
