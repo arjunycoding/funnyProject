@@ -1,527 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>ELabs</title>
-    <link rel='icon' href='yclogo.png' type='image/x-icon'/>
+    <link rel='icon' href='img/yclogo.png' type='image/x-icon'/>
+    <script src="js/time.js"></script>
+    <link rel="stylesheet"  href="css/style.css" />
 </head>
-
-<script>
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =
-  h + ":" + m + ":" + s;
-  var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-</script>
-
-<style>
-
-
-
-
-
-
-        body{
-
-            background-color: rgb(97, 97, 97);
-            width:70%;
-            font-family:"Comic Sans MS";
-            color:white;
-
-            }
-
-            input[type=text].search {
-
-                  border-radius: 4px;
-                  color:black;
-                  width: 130px;
-                  font-size: 16px;
-                  border:2px solid white;
-                  background-color: white;
-                  background-position: 10px 10px;
-                  padding: 10px 20px 12px 40px;
-                  transition: width 0.4s ease-in-out;
-            }
-
-            input[type=text]:focus {
-              width: 20%;
-            }
-
-        table{
-            padding:10px;
-        }
-
-        .super-erasers{
-                background: rgb(219, 235, 255);
-                border: 2px solid black;
-                font-family: "monospace", fantasy;
-                padding: 5px;
-                width:50%px;
-                height:80%px;
-                position:absolute;
-                z-index:1;
-                overflow-y: auto;
-                overflow-x: hidden;
-        }
-
-        .topb:hover{
-
-            font-style: italic;
-            font-size:9px;
-            background-color:#383838;
-            font-family:cursive,"Comic Sans MS","serif";
-            color:#FF3E00;
-        }
-
-        .topb{
-            font-size:10px;
-            border:none;
-            width:130px;
-            height:60px;
-            top:0px;
-            left:0px;
-            background-color:black;
-            color:white;
-
-
-        }
-
-        .topBar{
-            width:100%;
-            position:fixed;
-            top:0px;
-            left:0px;
-            background:black;
-
-        }
-
-         a{
-                color:red;
-            }
-       a.hover{
-       background:   white;
-       }
-
-       .welcome{
-       border:3px double red ;
-       padding:10px;
-       }
-
-
-
-
-
-
-
-
-        button.topbar{
-            width:10px;
-        }
-
-
-       
-        table{
-        width:600px;
-        }
-
-        th{
-        
-            border-bottom:2px solid black;
-            border-top:2px solid #999;
-        }
-
-        .gray{
-
-            background:#DCDCDC;
-        }
-
-        .button-login{
-            background-color:black;
-            color:white;
-            border-radius: 4px;
-            border: 4px solid black;
-        }
-
-        .time {
-        float:right;
-        font-size:3em;
-        background:black;
-        color:white;
-        border:black;
-        }
-
-        /* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-.middle{
-       background-color:white;
-       color:black;
-       width:100%;
-        margin:2% 10% 0% 2%;
-       }
-.welcome{
-       background-color:white;
-       color:black;
-       width:100%;
-        margin:2% 10% 0% 2%;
-       }
-       .start{
-       background-color:white;
-       color:black;
-       width:100%;
-        margin:2% 10% 0% 2%;
-       }
-
-       .login{
-       background-color:white;
-       color:black;
-       margin:2% 10% 0% 2%;
-       padding:1%;
-       border:3px solid black;
-       width:100%;
-
-       }
-
-
-
-
-    </style>
 <body onload="startTime()">
-
-
-<!-- Top Bar -->
-<div  class = "topBar">
-
-    <button class = "topb">ABOUT</button>
-    <button class = "topb">ARTICLES</button>
-    <button class = "topb"> YOUR ES-LABS</button>
-    <button class = "topb pics/">YOUR STATUS/PROFILE</button>
-    <button class = "topb pics/"> YOUR COMMUNTITY</button>
-    <button class = "topb pics/">SETTINGS</button>
-    <button class = "time" id="txt"></button>
-    <input class = "search" type="text" name="search" placeholder="Search..">
-
-
-
-
-</div>
-
-
-
-<br/>
-<br/>
-
-
-<!--Super Erasers!!!-->
-<div class="login">
-<!--login-->
-    <form id = "login" action = "/login" method = "post">
-
-        <div class = "two-thirds column" id = "main">
-
-            <fieldset>
-
-                <legend>login</legend>
-                <label for = "username">Username:</label>
-                <input type = "text" id = "username" name = "username"/>
-                <br/>
-                <label for = "pwd">Password:</label>
-                <input type = "password" id = "pwd" name = "pwd"/>
-                <br/>
-                <br/>
-                <input class = "button-login" type= "submit" value = "Login" />
-
-            </fieldset>
-
-        </div>
-
-    </form>
+    <!-- Top Bar -->
+    <div  class = "topBar">
+        <button class = "topb">ABOUT</button>
+        <button class = "topb">ARTICLES</button>
+        <button class = "topb"> YOUR ES-LABS</button>
+        <button class = "topb pics/">YOUR STATUS/PROFILE</button>
+        <button class = "topb pics/"> YOUR COMMUNTITY</button>
+        <button class = "topb pics/">SETTINGS</button>
+        <button class = "time" id="txt"></button>
+        <input class = "search" type="text" name="search" placeholder="Search..">
+    </div>
     <br/>
-</div>
-    <div class="welcome">
+    <br/>
+    <!--Super Erasers!!!-->
+    <div class="login">
+        <!--login-->
+        <form id = "login" action = "/login" method = "post">
+            <div class = "two-thirds column" id = "main">
+                <fieldset>
+                    <legend>login</legend>
+                    <label for = "username">Username:</label>
+                    <input type = "text" id = "username" name = "username"/>
+                    <br/>
+                    <label for = "pwd">Password:</label>
+                    <input type = "password" id = "pwd" name = "pwd"/>
+                    <br/>
+                    <br/>
+                    <input class = "button-login" type= "submit" value = "Login" />
+                </fieldset>
+            </div>
+        </form>
+    </div>
+    <br/>
+    <div class = "welcome">
         <h1> Super Erasers!!!-The Beggining</h1>
-
         <h2> By Adhithya & Arjun Yuvaraj</h2>
     </div>
-
-
     <br/>
     <br/>
-
     <div class="tab">
-        <button class="tablinks" onclick="eraser(event, 'introducing')">Intro</button>
-        <button class="tablinks" onclick="eraser(event, 'starting')">Start</button>
-        <button class="tablinks" onclick="eraser(event, 'Paris')">Suit</button>
-        <button class="tablinks" onclick="eraser(event, 'London')">House</button>
-        <button class="tablinks" onclick="eraser(event, 'complete')">Start up Complete!</button>
-    </div>
-    <div id="introducing" class="tabcontent"><h2 id="intro">Intro</h2>
-        <p >So welcome to the Super Erasers article! You might think “Why are erasers
-            super? They are super because they give you second chances! Unfortunately,
-            easers are not given respect so we decided to change that.
-            It has been an idea so now we are going to spread it to readers
-            like you throughout the world. Come on with us as we go through the
-            makings of eraser clothing,houses and jobs and even money!
-        </p></div>
-    <div id="starting" class="tabcontent">
-    <h2 id="start"> Start up</h2>
-    <p>In order to start your ‘super’ journey you need the following:<br>
-        1.Three 8 x 11 in paper(8 x 11.5 is fine to) pieces of paper.<br>
-        2.One eraser<br>
-        3.$1000 eraser dollars.<br>
-        4.You also need glue,tape, scissors and markers!<br>
-        Now were should we start? Click the tab that says "Suit" then the one that says house!
-    </p>
-</div>
-    <div id="London" class="tabcontent">
+        <div class = "start">
+            <button class="tablinks" onclick="eraser(event, 'introducing')">Intro</button>
+            <button class="tablinks" onclick="eraser(event, 'starting')">Start</button>
+            <button class="tablinks" onclick="eraser(event, 'Paris')">Suit</button>
+            <button class="tablinks" onclick="eraser(event, 'London')">House</button>
+            <button class="tablinks" onclick="eraser(event, 'complete')">Start up Complete!</button>
+            <button class="tablinks" onclick="eraser(event, 'jobs')">Jobs</button>
+            <button class="tablinks" onclick="eraser(event, '$$$')">Eraser Money</button>
+            <button class="tablinks" onclick="eraser(event, 'politics')">Politics</button>
+            <button class="tablinks" onclick="eraser(event, 'next??')">What is next?</button>
+        </div>
+        <div id="introducing" class="tabcontent" style="display:block">
+            <br/>
+            <br/>
+            <h2>Intro</h2>
+            <p >So welcome to the Super Erasers article! You might think “Why are erasers
+                super? They are super because they give you second chances! Unfortunately,
+                easers are not given respect so we decided to change that.
+                It has been an idea so now we are going to spread it to readers
+                like you throughout the world. Come on with us as we go through the
+                makings of eraser clothing,houses and jobs and even money!
+            </p>
+        </div>
+        <div id="starting" class="tabcontent">
+            <br/>
+            <br/>
+            <h2 id="start"> Start up</h2>
+            <p>In order to start your ‘super’ journey you need the following:<br>
+                1.Three 8 x 11 in paper(8 x 11.5 is fine to) pieces of paper.<br>
+                2.One eraser<br>
+                3.$1000 eraser dollars.<br>
+                4.You also need glue,tape, scissors and markers!<br>
+                Now were should we start? Click the tab that says "Suit" then the one that says house!
+            </p>
+        </div>
+        <div id="London" class="tabcontent">
+            <br/>
+            <br/>
+            <h2 id="house">Eraser house</h2>
+            <p> Watch the video and see the slideshow</p>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/VDJI_DmvBmw"></iframe>
+        </div>
+        <div id="Paris" class="tabcontent">
+            <br/>
+            <br/>
+            <h2 id="suit">Eraser suit</h2>
+            <p> Watch the video and see the slideshow</p>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/v95DJebIFos"></iframe>
+            <br>
+        </div>
+        <div id="complete" class="tabcontent">
+            <br/>
+            <br/>
+            <h2>Set up Complete!</h2>
+            <p>You have now built your own house and eraser! Now you need to do these
+             few questions first!</p>
+            <form>
+                <input type="text" name="fname" placeholder="Your Name"><br/>
+                <input type="text" name="esname" placeholder="Eraser Name"><br/>
+                <input type="text" id="email" name="email" placeholder="email"><br/>
 
-        <h2 id="house">Eraser house</h2>
-        <p> Watch the video and see the slideshow</p>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/VDJI_DmvBmw"></iframe>
+            </form>
+            Take pictures of eraser house and suit using the camera tool below. Or you
+            can upload a file.
+        </div>
 
+        <div id="jobs" class="tabcontent">
+            <br/>
+            <br/>
+            <h2 >Jobs</h2>
+            <p >We are now going to go through each and every job that you can do.
+                It will help if you are doing this with some friends.
+                It will develop a community!</p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Jobs</th>
+                    <th> What does it do?</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Fashion Designer</td>
+                    <td>makes eraser covers</td>
+                </tr>
+                <tr class = "gray">
+                    <td>Carpenter</td>
+                    <td>makes and figures out what should be in the house</td>
+                </tr>
+                <tr>
+                    <td>Inside House guy</td>
+                    <td>makes </td>
+                </tr>
+                <tr class = "gray">
+                    <td>Artist</td>
+                    <td>makes art </td>
+                </tr>
+                <tr>
+                    <td>Doctor</td>
+                    <td>checks how your eraser is doing </td>
+                </tr>
+                <tr class = "gray">
+                    <td>Banker</td>
+                    <td>makes and checks money </td>
+                </tr>
+                <tr>
+                    <td>Inventor</td>
+                    <td> Makes new eraser terms </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Money-->
+        <div id="$$$" class="tabcontent">
+            <br/>
+            <br/>
+            <h2>Money</h2>
+            <p>
+                Eraser money is very important. Fist of all,to represent this
+                you use a $ sign. The money is a lot like U.S dollars. Their is a 1,5,10
+                ,50,100 and 1000 bill. Their is also a 1,5,10,50,100 and 1000 cent coin.
+                Be sure you have a mark to make sure it is official,it should also
+                be secret. Eraser money looks
+                like this: and coins look like this:
+                <img src = "img/money.png" alt = "doller-bill" width = "50%" />
+            </p>
+        </div>
 
-    </div>
+        <!--Politics-->
+        <div id="politics" class="tabcontent">
+            <br/>
+            <br/>
+            <h2>Politics</h2>
+            <p> Basically in the government their is just the president. You vote just how you
+                reguallry would and any number of people will run but only one will win. He will get to decide
+                what to do in a communtiy.</p>
+        </div>
 
-    <div id="Paris" class="tabcontent">
+        <!--What is next?-->
+        <div id="next??" class="tabcontent">
+            <br/>
+            <br/>
+            <h2 id="next">What is next?</h2>
+            <p>Now you know how to build your communtiy! Start building it! Make a
+                join code.
+                so our webesite can reconize it! Then people will be able to join. Remember to
+                have jobs
+                people can purchase things. Like art from artist or houses from carpentars.
+                Want to join a communtiy? Then write the join code below!
+                Choose a job you want to be in...the pay will be the same. Make sureto
+                keep some money and have at least one person be a banker. Sort all of these
+                out with the person who made the communtiy you want to join. If you are making
+                a communtiy-these issues will come later.
 
-        <h2 id="suit">Eraser suit</h2>`
-        <p> Watch the video and see the slideshow</p>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/v95DJebIFos"></iframe>
-        <br>
-
-    </div>
-    <div id="complete" class="tabcontent">
-    <h2>Set up Complete!</h2>
-    <p>You have now built your own house and eraser! Now you need to do these
-     few questions first!</p>
-    <form>
-        <input type="text" name="fname" placeholder="Your Name"><br/>
-        <input type="text" name="esname" placeholder="Eraser Name"><br/>
-        <input type="text" id="email" name="email" placeholder="email"><br/>
-
-    </form>
-
-
-
-    Take pictures of eraser house and suit using the camera tool below. Or you
-    can upload a file.
-</div>
-</div>
-
-    <div class= "middle">
-
-
-    <div class="tab">
-        <button class="tablinks" onclick="eraser(event, 'jobs')">Jobs</button>
-        <button class="tablinks" onclick="eraser(event, '$$$')">Eraser Money</button>
-        <button class="tablinks" onclick="eraser(event, 'politics')">Politics</button>
-        <button class="tablinks" onclick="eraser(event, 'next??')">What is next?</button>
-    </div>
-
-    <div id="jobs" class="tabcontent">
-    <h2 >Jobs</h2>
-    <p >We are now going to go through each and every job that you can do.
-        It will help if you are doing this with some friends.
-        It will develop a community!</p>
-
-    <table>
-        <thead>
-        <tr >
-            <th>Jobs</th>
-            <th> What does it do?</th>
-
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Fashion Designer</td>
-            <td>makes eraser covers</td>
-
-        </tr>
-        <tr class = "gray">
-            <td>Carpenter</td>
-            <td>makes and figures out what should be in the house</td>
-
-        </tr>
-        <tr>
-            <td>Inside House guy</td>
-            <td>makes </td>
-
-        </tr>
-        <tr class = "gray">
-            <td>Artist</td>
-            <td>makes art </td>
-
-        </tr>
-        <tr>
-            <td>Doctor</td>
-            <td>checks how your eraser is doing </td>
-
-        </tr>
-        <tr class = "gray">
-            <td>Banker</td>
-            <td>makes and checks money </td>
-
-        </tr>
-        <tr>
-            <td>Inventor</td>
-            <td> Makes new eraser terms </td>
-
-        </tr>
-        </tbody>
-    </table>
-</div>
-
-
-
-
-
-    <!--Money-->
-<div id="$$$" class="tabcontent">
-    <h2>Money</h2>
-    <p>
-        Eraser money is very important. Fist of all,to represent this
-        you use a $ sign. The money is a lot like U.S dollars. Their is a 1,5,10
-        ,50,100 and 1000 bill. Their is also a 1,5,10,50,100 and 1000 cent coin.
-        Be sure you have a mark to make sure it is official,it should also
-        be secret. Eraser money looks
-        like this: and coins look like this:
-        <img src = "Monye.png" alt = "doller-bill" width = "50%" />
-    </p>
-
-</div>
-
-    <!--Politics-->
-<div id="politics" class="tabcontent">
-    <h2>Politics</h2>
-
-  <p> Basically in the government their is just the president. You vote just how you
-  reguallry would and any number of people will run but only one will win. He will get to decide
-  what to do in a communtiy.</p>
-    </div>
-
-
-
-<!--What is next?-->
-<div id="next??" class="tabcontent">
-
-    <h2 id="next">What is next?</h2>
-    <p>Now you know how to build your communtiy! Start building it! Make a
-         join code.
-    so our webesite can reconize it! Then people will be able to join. Remember to
-        have jobs
-        people can purchase things. Like art from artist or houses from carpentars.
-        Want to join a communtiy? Then write the join code below!
-        Choose a job you want to be in...the pay will be the same. Make sureto
-        keep some money and have at least one person be a banker. Sort all of these
-        out with the person who made the communtiy you want to join. If you are making
-        a communtiy-these issues will come later.
-
-    </p>
-
-
-
-
-    <div>
-        <label for="country">Fill the job you want in the drop -down menu below</label>
-        <div class="col-75">
-            <select id="country" name="country">
-                <option value="Fashion Designer	">Fashion Designer</option>
-                <option value="Carpenter">Carpenter</option>
-                <option value="Inside House guy	">Inside House guy	</option>
-                <option value="Artist">Artist</option>
-                <option value="Doctor">Doctor</option>
-                <option value="Banker">Banker</option>
-                <option value="Inventor">Inventor</option>
-            </select>
+            </p>
+            <div>
+                <label for="country">Fill the job you want in the drop -down menu below</label>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="Fashion Designer	">Fashion Designer</option>
+                        <option value="Carpenter">Carpenter</option>
+                        <option value="Inside House guy	">Inside House guy	</option>
+                        <option value="Artist">Artist</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Banker">Banker</option>
+                        <option value="Inventor">Inventor</option>
+                    </select>
+                </div>
+            </div>
+            <a href = "mailto: arjunycoding@gmail.com">Email Arjun</a>
+            <br/>
         </div>
     </div>
-    <a href = "mailto: arjunycoding@gmail.com">Email Arjun</a>
-    <br/>
-</div>
-
-
-
-</div>
-</div>
+    <script src="js/tabs.js"></script>
 </body>
 </html>
-<script>
-    (function(){
+<!--<script>-->
+<!--    (function(){-->
+<!--    var form = document.getElementById('login');-->
 
-    var form = document.getElementById('login');
-
-    addEvent(form, 'submit' , function(e) {
-
-        e.preventDefault();
-        var element  = this.element;
-        var username = element.username.value;
-        var msg = 'Welcome ' + username;
-        document.getElementById('main').textContent = msg;
-});
-}());
-
-
-
-function eraser(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-</script>
+<!--    addEvent(form, 'submit' , function(e) {-->
+<!--        e.preventDefault();-->
+<!--        var element  = this.element;-->
+<!--        var username = element.username.value;-->
+<!--        var msg = 'Welcome ' + username;-->
+<!--        document.getElementById('main').textContent = msg;-->
+<!--});-->
+<!--}());-->
+<!--</script>-->
 
 
 
