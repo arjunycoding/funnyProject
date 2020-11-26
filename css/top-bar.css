@@ -1,0 +1,26 @@
+.topb:hover{
+            font-style: italic;
+            font-size:9px;
+            background-color:#383838;
+            font-family:cursive,"Comic Sans MS","serif";
+            color:#FF3E00;
+        }
+
+        .topb{
+            font-size:10px;
+            border:none;
+            width:130px;
+            height:60px;
+            top:0px;
+            left:0px;
+            background-color:black;
+            color:white;
+        }
+
+        .topBar{
+            width:100%;
+            position:fixed;
+            top:0px;
+            left:0px;
+            background:black;
+        }
