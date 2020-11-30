@@ -1,19 +1,29 @@
-    function startTime() {
-          var today = new Date();
-          var h = today.getHours();
-          var m = today.getMinutes();
-          var s = today.getSeconds();
-          m = checkTime(m);
-          s = checkTime(s);
-          document.getElementById('txt').innerHTML =
-          h + ":" + m + ":" + s;
-          var t = setTimeout(startTime, 500);
-    }
+       function startTime() {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              h = checkTime(h);
+              h = regTime(h);
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =
+              h + ":" + m + ":" + s;
+              var t = setTimeout(startTime, 100);
+        }
+        function regTime(i){
+            if (i > 12){
+            i = i - 12;
+            }
 
-    function checkTime(i) {
-          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-          return i;
-          if(h>12){
-          h = h - 12;
-          };
-    }
+        return i;
+        }
+
+
+        function checkTime(i) {
+              if (i < 10) {
+              i = "0" + i;
+                           }
+        return i;
+
+        }
