@@ -23,6 +23,7 @@
         .tab button:hover {
              background-color:grey;
              color:white;
+             padding:10px 10px 10px 10px;
             font-style: italic;
             font-size: 15px
             font-family:cursive,"Comic Sans MS","serif";
