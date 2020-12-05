@@ -46,10 +46,6 @@
          a.hover{
             background: white;
          }
-         .welcome{
-            border:3px double red;
-            padding:10px;
-         }
 
          button.topbar{
             width:10px;
@@ -103,3 +99,22 @@
             top
            float:right;
               }
+
+
+    .welcome {
+        width: 100%;
+        height: 100;
+        background-color: white;
+        animation-name: example;
+        animation-duration: 4s;
+        text-align:center;
+        border:3px double red;
+        padding:10px;
+    }
+
+    @keyframes example {
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+    }
