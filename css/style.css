@@ -118,3 +118,10 @@
         50%  {background-color: green;}
         100% {background-color: blue;}
     }
+    .end-footer{
+    clear: both;
+    background-color:black;
+    padding 6px;
+
+
+    }

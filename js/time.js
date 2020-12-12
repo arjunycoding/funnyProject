@@ -1,4 +1,4 @@
-        function startTime() {
+ function startTime() {
                      var today = new Date();
                      var h = today.getHours();
                      var m = today.getMinutes();
@@ -27,10 +27,3 @@
                return i;
 
                }
-               var hours = today.getHours();
-                   if (hours>11){
-                       text(s+"pm");
-                   }
-                   else {
-                       text(s+"am")
-                   }
