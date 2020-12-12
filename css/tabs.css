@@ -17,6 +17,7 @@
             padding: 10px 10px 10px 10px;
             transition: 0.3s;
             font-size: 17px;
+
         }
 
         /* Change background color of buttons on hover */
@@ -28,6 +29,7 @@
             font-size: 15px
             font-family:cursive,"Comic Sans MS","serif";
             transition: 0.5s;
+            border: 1px white outset;
         }
 
         /* Create an active/current tablink class */
@@ -35,6 +37,7 @@
             background-color:black;
             color:white;
             transition: 0.5s;
+            border: 1px white outset;
         }
 
         /* Style the tab content */

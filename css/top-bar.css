@@ -7,7 +7,7 @@
         }
 
         .topb{
-            font-size: 10px;
+            font-size: 15px;
             border:none;
             width:130px;
             height:60px;
@@ -15,7 +15,7 @@
             left:0px;
             background-color:black;
             color:white;
-            padding:0px 10px 0px 0px;
+            padding:0px 10px 0px 10px;
         }
 
         .topBar{
