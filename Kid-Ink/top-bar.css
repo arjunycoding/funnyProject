@@ -1,19 +1,19 @@
         .topb:hover{
             font-style: italic;
-            font-size:10px;
-            background-color:#383838;
+            font-size:12px;
+            background-color:#004864;
             font-family:cursive,"Comic Sans MS","serif";
-            color:#FF3E00;
+            color:white;
         }
 
         .topb{
-            font-size: 15px;
+            font-size:12px;
             border:none;
             width:130px;
             height:60px;
             top:0px;
             left:0px;
-            background-color:black;
+            background-color:#00709C;
             color:white;
             padding:0px 10px 0px 10px;
         }
@@ -23,7 +23,7 @@
             position:fixed;
             top:0px;
             left:0px;
-            background:black;
+            background:#00709C;
         }
 
          input[type=text].search {
