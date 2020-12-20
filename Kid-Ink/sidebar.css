@@ -2,7 +2,6 @@
     /* Style the tab */
     .tab {
       float: left;
-      width:70%;
       font-family:"Comic Sans MS";
       border: 1px solid #ccc;
       background-color: white;
@@ -37,10 +36,11 @@
 
     /* Style the tab content */
     .tabcontent {
-      float: left;
-      padding: 0px 12px;
+      float:left;
+      padding: 10px;
       border: 1px solid #ccc;
-      width: 70%;
-      border-left: none;
+      border-left: 1px solid gray;
       height: 300px;
+      width:70%;
+
     }
