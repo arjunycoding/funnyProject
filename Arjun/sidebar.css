@@ -42,5 +42,7 @@
       border-left: 1px solid gray;
       height: 300px;
       width:70%;
+      overflow-y: auto;
+      overflow-x: hidden;
 
     }

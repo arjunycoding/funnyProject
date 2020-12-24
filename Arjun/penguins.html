@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kid Inc</title>
-    <link rel='icon' href='kid-ink-logo.png' type='image/x-icon'/>
+    <title>Penguins</title>
+    <link rel='icon' href='penguin-logo.png' type='image/x-icon'/>
     <link rel="stylesheet"  href="top-bar.css" />
     <link rel="stylesheet"  href="sidebar.css" />
     <link rel="stylesheet"  href="styles.css" />
@@ -34,24 +34,89 @@ k
 
 
 <div class="tab">
-    <button class="tablinks sideb" onclick="openCity(event, 'London')" id="defaultOpen">About</button>
-    <button class="tablinks sideb" onclick="openCity(event, 'Paris')">Newspapers</button>
-    <button class="tablinks sideb" onclick="openCity(event, 'Tokyo')">???</button>
+    <button class="tablinks sideb" onclick="openCity(event, 'Londen')"  id="defaultOpen">Intro</button>
+    <button class="tablinks sideb" onclick="openCity(event, 'Swimming')">Swimming</button>
+    <button class="tablinks sideb" onclick="openCity(event, 'Paris')">Life Cycle</button>
+    <button class="tablinks sideb" onclick="openCity(event, 'Tokyo')">What Do you Think?</button>
+
 </div>
 
-<div id="London" class="tabcontent sideb">
+<div id="Londen" class="tabcontent sideb">
+    <h3>Introduction</h3>
+    So I bet that you think that emperor penguins are just regular penguins and they have black and white feathers.
+    But if you think I am wrong here is a quick example of how cool emperor penguins. So if you took an emperor penguin and an average 9-year-old.
+    Now put them back to back and they will be the same height! So now do you have a different perspective about emperor penguin?
+    Well keep reading!
+
+</div>
+<div id="Swimming" class="tabcontent sideb">
     <h3>Swimming</h3>
-    <p>Content</p>
+    <p>An emperor penguin is a bird that can not fly but do not get me wrong they are great swimmers.
+        Emperor penguins will use their wings as fins instead of using them to fly like other birds.
+        When emperor penguins swim they use countershading. Tye have white bellies which make them look like the ocean floor and their black are backs to look like the ocean surface.
+        This helps them stay safe from their predators.
+        Some of their predators are leopard and fur seals, sea lions, sharks and killer whales.
+    </p>
+
 </div>
 
 <div id="Paris" class="tabcontent sideb">
     <h3>Life Cycle</h3>
-    <p>Content</p>
+    <p>
+        The life cycle of an emperor penguin starts with the egg being laid.
+        This is most likely to happen in May or June. Next after 65 days the egg hatches.
+        Then the dad will go looking for food for 3 months while the mom takes care of the egg.
+        Then the egg is sent to a group called creches.
+        Then at the age of 19  it is an adult.
+    </p>
 </div>
 
 <div id="Tokyo" class="tabcontent sideb">
     <h3>What Do You Think?</h3>
-    <p>Content</p>
+    <form>
+        <label>Did you learn something?</label>
+        <br/>
+        <br/>
+        <input type = radio id = "yes" name = "yes" required>
+        <label>Yes</label>
+        <br/>
+        <input type = radio id = "no" name = "no">
+        <label>no</label>
+        <br/>
+        <br/>
+        <label>What Would you rate us?</label>
+        <br/>
+        <label>Bad</label>
+        <input type = "range" id = "g-b" name = "g-b" required>
+        <label>Good</label>
+        <br/>
+        <br/>
+        <label>What Would You Like To Learn?</label>
+        <br/>
+        <br/>
+        <label>Here are a few suggestions</label>
+        <br/>
+        <br/>
+        <select>
+            <option value = "Dog">Dog</option>
+            <option value = "Cat">Cat</option>
+            <option value = "Penguin">Penguin</option>
+            <option value = "Monkey">Monkey</option>
+            <option value = "Guinea Pig">Guinea Pig</option>
+            <option value = "Koala Bear">Koala Bear</option>
+            <option value = "Rabbit">Rabbit</option>
+            <option value = "Tiger">Tiger</option>
+        </select>
+        <br/>
+        <input type = "text" id = "topic" name = "topic" minlength = "1" maxlength = "42">
+        <br/>
+        <br/>
+        <label>Anythig Else? Write It Below!</label>
+        <textarea id = "extra" name = "extra" rows = "3" cols = "40">feedback</textarea>
+        <input type = "submit" name = "submit" required>
+        <br/>
+
+    </form>
 </div>
 </body>
 <script src = "sidebar.js"></script>
