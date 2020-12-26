@@ -18,27 +18,57 @@
     <img src="Logo.png" alt="The logo. A smiley face. Has red 'Awesome' on the top and bottom">
 </div>
 <form action="form.html" method="POST">
-    <h1>Try  to come up with as many ideas as you can! ideas! Write and tick of all the ones you want to do!</h1>
+    <h1>Try to come up with as many ideas as you can! Write and tick of all the ones you want to do!</h1>
+    <section>
+        <span>Do you want to do some fun things over break?</span>
+        <br>
+        <input type="radio" id="yes" name="yes" value="Yes">
+        <label for="yes">Yes! :)</label>
+        <br>
+        <input type="radio" id="no" name="yes" value="Yes">
+        <label for="no">No(You are going to miss out!) :(</label>
+    </section>
     <section class="Memories">
         <label for="Memories">What winter things have you done in the past?</label>
-        <input type="text" placeholder="Nothing" name="Memories" id="Memories">
-    </section>
-    <section>
-        <label for="To-do-list">How many thingss would you want to do this winter?</label>
-        <input  type="number" id="To-do-list" name="To-do-list">
+        <br>
+        <textarea id="Memories" name="Memories" rows="3" cols="40"></textarea>
     </section>
     <br>
+    <section>
+        <label for="To-do-list">How many things would you want to do this winter?</label>
+        <input  type="number" id="To-do-list" name="To-do-list" placeholder="type a number">
+    </section>
+    <br>
+    <section>
         <span>What crafts look fun for you?</span>
         </br>
         <input type="checkbox" id="check" name="check"  value="3-D Snowflake">
-        <label for="check">3-D Snowflake <a>Click Here!</a></label>
+        <label for="check">3-D Snowflake <a href="https://www.youtube.com/watch?v=lT2oeNkTOAk">Click Here!</a></label>
         </br>
         <input type="checkbox" id="check1" name="check"  value="3-D Christmas tree">
-        <label for="check2">3-D Christmas tree <a>Click Here!</a></label>
+        <label for="check2">3-D Christmas tree <a href="https://www.youtube.com/watch?v=TZAsOQiZMEs">Click Here!</a></label>
         </br>
         <input type="checkbox" id="check2" name="check"  value="Origami Santa">
-        <label for="check2">Origami Santa <a>Click Here!</a></label>
+        <label for="check2">Snowman chain <a href="https://www.youtube.com/watch?v=FSVBIkCTx08">Click Here!</a></label>
         </br>
+
+    </section>
+    <section>
+        <span> What things will you do with your family? Can you think of any other things to do? Like have a gift giving event or stay up till 12:00am on New Year's Eve?</span>
+        <br>
+        <textarea id="celebrate!" name="celebrate!" rows="5" col="50"></textarea>
+        <label for="celebrate!"></label>
+    </section>
+    <section>
+        <span>Now narrow down three things you will do over the break by yourself and your family!</span>
+        <br>
+        <label for="final">Write three things that you will do by yourself.</label>
+        <textarea id="final" name="final" rows="5" col="50"></textarea>
+   \
+        <br>
+        <label for="final1">Write three things that you will do with your family.</label>
+        <textarea id="final1" name="final1" rows="5" col="50"></textarea>
+
 
     </section>
 </form>
