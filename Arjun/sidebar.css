@@ -44,5 +44,10 @@
       width:70%;
       overflow-y: auto;
       overflow-x: hidden;
+      color = "maroon"
 
+    }
+
+    sideb{
+     center-align: 100px;
     }
