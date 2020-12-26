@@ -2,3 +2,50 @@
             width:70%;
             font-family:"Comic Sans MS";
          }
+
+          .headings {
+            color:teal;
+            font-family: cursive;
+            text-transform: capitalize;
+         }
+          .main-headings{
+             text-shadow:2px 2px 3px #666666;
+             text-transform:uppercase;
+             font-family:Georgia;
+             color:#0088dd;
+             text-align: center ;
+          }
+
+        .penguin-baby {
+             width: 150px;
+             float: left;
+             margin-right: 6px;
+             margin-bottom: 6px;
+             border:2px double coral;
+             border-radius:15px;
+
+         }
+
+         .penguin-swimming {
+              width: 150px;
+              float: left;
+              margin-right: 6px;
+              margin-bottom: 6px;
+              border:2px double coral;
+              border-radius:15px;
+
+         }
+
+         .life-cycle{
+              width: 150px;
+              float: left;
+              margin-right: 6px;
+              margin-bottom: 6px;
+
+
+
+         }
+
+         hr{
+            line-color:gray;
+         }

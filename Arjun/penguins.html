@@ -14,11 +14,11 @@
 <!-- Top Bar -->
 k
 <div  class = "topBar">
-    <button class = "topb">ABOUT</button>
-    <button class = "topb">ARTICLES</button>
-    <button class = "topb pics/">YOUR PROFILE</button>
-    <button class = "topb pics/"> SIGN IN</button>
-    <button class = "topb pics/">SETTINGS</button>
+    <button class = "topb">about</button>
+    <button class = "topb">articles</button>
+    <button class = "topb pics/">your profile</button>
+    <button class = "topb pics/"> sign in</button>
+    <button class = "topb pics/">settings</button>
     <input class = "search" type="text" name="search" placeholder="Search..">
 </div>
 
@@ -31,7 +31,9 @@ k
 <br/>
 <br/>
 
-
+<h1 class = "main-headings">Penguins</h1>
+<h4 class = "main-headings">These black and white birds</h4>
+<hr/>
 
 <div class="tab">
     <button class="tablinks sideb" onclick="openCity(event, 'Londen')"  id="defaultOpen">Intro</button>
@@ -42,15 +44,17 @@ k
 </div>
 
 <div id="Londen" class="tabcontent sideb">
-    <h3>Introduction</h3>
-    So I bet that you think that emperor penguins are just regular penguins and they have black and white feathers.
+    <h3 class = "headings">Introduction</h3>
+    <img  class = "penguin-baby" src = "penguin-baby.png">
+    <p>So I bet that you think that emperor penguins are just regular penguins and they have black and white feathers.
     But if you think I am wrong here is a quick example of how cool emperor penguins. So if you took an emperor penguin and an average 9-year-old.
     Now put them back to back and they will be the same height! So now do you have a different perspective about emperor penguin?
-    Well keep reading!
+        Well keep reading!</p>
 
 </div>
 <div id="Swimming" class="tabcontent sideb">
-    <h3>Swimming</h3>
+    <h3 class = "headings">Swimming</h3>
+    <img class = "penguin-swimming" src = "penguin-swimming.png">
     <p>An emperor penguin is a bird that can not fly but do not get me wrong they are great swimmers.
         Emperor penguins will use their wings as fins instead of using them to fly like other birds.
         When emperor penguins swim they use countershading. Tye have white bellies which make them look like the ocean floor and their black are backs to look like the ocean surface.
@@ -61,8 +65,9 @@ k
 </div>
 
 <div id="Paris" class="tabcontent sideb">
-    <h3>Life Cycle</h3>
+<h3 class = "headings">Life Cycle</h3>
     <p>
+        <img class = "life-cycle" src = "life-cycle.png" width = "50px">
         The life cycle of an emperor penguin starts with the egg being laid.
         This is most likely to happen in May or June. Next after 65 days the egg hatches.
         Then the dad will go looking for food for 3 months while the mom takes care of the egg.
@@ -72,7 +77,7 @@ k
 </div>
 
 <div id="Tokyo" class="tabcontent sideb">
-    <h3>What Do You Think?</h3>
+    <h3 class = "headings">What Do You Think?</h3>
     <form>
         <label>Did you learn something?</label>
         <br/>
@@ -112,7 +117,9 @@ k
         <br/>
         <br/>
         <label>Anythig Else? Write It Below!</label>
+        <br/>
         <textarea id = "extra" name = "extra" rows = "3" cols = "40">feedback</textarea>
+        <br/>
         <input type = "submit" name = "submit" required>
         <br/>
 
@@ -120,3 +127,5 @@ k
 </div>
 </body>
 <script src = "sidebar.js"></script>
+
+<h3 class = "box-model">Did you like our web?</h3>
