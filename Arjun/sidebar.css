@@ -44,13 +44,10 @@
       padding: 10px;
       border: 1px solid #ccc;
       border-left: 1px solid gray;
-      height:350;
+      height:350px;
       width:70%;
       overflow-y: auto;
       overflow-x: hidden;
-      overflow-x: auto;
-      overflow-y: hidden;
-      color = "maroon"
 
     }
 
