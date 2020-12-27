@@ -8,24 +8,31 @@
     <link rel="stylesheet"  href="Awesome.css" />
 </head>
 <body>
-<div class="welcome!">
+<section class="welcome">
     <form>
         <label for="username">Username:</label>
-        <input type="text" name="username" id="username">
-        <br>
+        <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+        <br/>
         <label for="Password">Password:</label>
-        <input type="password" id="Password" name="Password>"
+        <input type="password" id="Password" name="Password" minlength="8" maxlength="20" required>
+        <br/>
+        <input value="Continue to the awesomeness!" type="submit">
     </form>
-</div>
-<h1>Welcome to the Awesome Club!!!</h1>
-<div id="intro">
-    <h2>What is the Awesome Club about?</h2>
-    <p> The awesome club is a place where you do fun activities and bring ideas. Got any ideas? then tell them to the community!!
-        Since it is winter, try to make some 'wintery' ideas! Stummped? Do the form below! Keep being awesome!- <em>Adhithya Yuvaraj Dec 2020-Jan 20201</em> </p>
-</div>
-<div>
+</section>
+<main>
+    <header>
+        <h1>Welcome to the Awesome Club!!!</h1>
+    </header>
+    <article id="intro">
+        <h2>What is the Awesome Club about?</h2>
+        <p> The awesome club is a place where you do fun activities and bring ideas. Got any ideas? then tell them to the community!!
+            Since it is winter, try to make some 'wintery' ideas! Stummped? Do the form below! Keep being awesome!- <em>Adhithya Yuvaraj Dec 2020-Jan 20201</em> </p>
+    </article>
+</main>
+<figure>
     <img src="Logo.png" alt="The logo. A smiley face. Has red 'Awesome' on the top and bottom">
-</div>
+
+</figure>
 <form action="form.html" method="POST">
     <h1>Try to come up with as many ideas as you can! Write and tick of all the ones you want to do!</h1>
     <section>
@@ -38,9 +45,9 @@
         <label for="no">No(You are going to miss out!) :(</label>
     </section>
     <section class="Memories">
-        <label for="Memories">What winter things have you done in the past?</label>
+        <label for="Memories">What winter things have you done in the past? Write 'none' if you do not have anything.</label>
         <br>
-        <textarea id="Memories" name="Memories" rows="5" cols="50" required ></textarea>
+        <textarea id="Memories" name="Memories" rows="5" cols="50" required minlength="4" maxlength="500" ></textarea>
     </section>
     <br>
     <section>
@@ -50,36 +57,35 @@
     <br>
     <section>
         <span>What crafts look fun for you?</span>
-        </br>
-        <input type="checkbox" id="check" name="check"  value="3-D Snowflake" >
-        <label for="check">3-D Snowflake <a href="https://www.youtube.com/watch?v=lT2oeNkTOAk">Click Here!</a></label>
-        </br>
-        <input type="checkbox" id="check1" name="check"  value="3-D Christmas tree">
-        <label for="check2">3-D Christmas tree <a href="https://www.youtube.com/watch?v=TZAsOQiZMEs">Click Here!</a></label>
-        </br>
-        <input type="checkbox" id="check2" name="check"  value="Origami Santa" >
-        <label for="check2">Snowman chain <a href="https://www.youtube.com/watch?v=FSVBIkCTx08">Click Here!</a></label>
-        </br>
-
+        <nav>
+            </br>
+            <input type="checkbox" id="check" name="check"  value="3-D Snowflake" >
+            <label for="check">3-D Snowflake <a href="https://www.youtube.com/watch?v=lT2oeNkTOAk">Click Here!</a></label>
+            </br>
+            <input type="checkbox" id="check1" name="check"  value="3-D Christmas tree">
+            <label for="check2">3-D Christmas tree <a href="https://www.youtube.com/watch?v=TZAsOQiZMEs">Click Here!</a></label>
+            </br>
+            <input type="checkbox" id="check2" name="check"  value="Origami Santa" >
+            <label for="check2">Snowman chain <a href="https://www.youtube.com/watch?v=FSVBIkCTx08">Click Here!</a></label>
+            </br>
+        </nav>
     </section>
     <section>
         <span> What things will you do with your family? Can you think of any other things to do? Like have a gift giving event or stay up till 12:00am on New Year's Eve?</span>
         <br>
-        <textarea id="celebrate!" name="celebrate!" rows="5" col="50" required ></textarea>
+        <textarea id="celebrate!" name="celebrate!" rows="5" col="50" required minlength="15" maxlength="400" ></textarea>
         <label for="celebrate!"></label>
     </section>
     <section>
         <span>Now narrow down three things you will do over the break by yourself and your family!</span>
         <br>
-        <label for="final">Write three things that you will do by yourself.</label>
+        <label for="final">Write three things that you will do by yourself. Use a minimum of 15-30 words!</label>
         <br>
-        <textarea id="final" name="final" rows="5" col="50" required ></textarea>
+        <textarea id="final" name="final" rows="5" col="50" required minlength="15" maxlength="300" ></textarea>
         <br>
-        <label for="final1">Write three things that you will do with your family.</label>
+        <label for="final1">Write three things that you will do with your family.Use a minimum of 15-30 words!</label>
         <br>
-        <textarea id="final1" name="final1" rows="5" col="50" required ></textarea>
-
-
+        <textarea id="final1" name="final1" rows="5" col="50" required minlength="15" maxlength="300" ></textarea>
     </section>
     <section>
         <h1>Congrats! you finished! Just hit the submit button and we'll get your results! Thank You!</h1>
