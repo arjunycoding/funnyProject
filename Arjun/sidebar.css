@@ -3,10 +3,13 @@
     .tab {
       float: left;
       font-family:"Comic Sans MS";
-      border: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
       background-color: white;
-      width: 30%;
-      height: 300px;
+      width: 305;
+      height: auto;
     }
 
     /* Style the buttons inside the tab */
@@ -16,6 +19,7 @@
       color: black;
       padding: 22px 16px;
       width: 100%;
+      height:70px;
       border: none;
       outline: none;
       text-align: left;
@@ -40,10 +44,12 @@
       padding: 10px;
       border: 1px solid #ccc;
       border-left: 1px solid gray;
-      height: 300px;
+      height:350;
       width:70%;
       overflow-y: auto;
       overflow-x: hidden;
+      overflow-x: auto;
+      overflow-y: hidden;
       color = "maroon"
 
     }
