@@ -4,7 +4,12 @@
             /*background-color:#004864;*/
             font-family:cursive,"Comic Sans MS","serif";
             /*color:#D16500;*/
-            color:#A70000;
+            color:white;
+            background:#005F85;
+            font-weight:bold;
+            word-spacing:0.3em;
+            letter-spacing:0.02em;
+            text-align:center;
         }
         .topb{
             font-size:12px;
@@ -17,6 +22,9 @@
             color:white;
             padding:0px 10px 0px 10px;
             text-transform: uppercase;
+            word-spacing:0.3em;
+            letter-spacing:0.02em;
+            text-align:center;
         }
 
         .topBar{
