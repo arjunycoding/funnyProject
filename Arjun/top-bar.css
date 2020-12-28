@@ -1,9 +1,10 @@
         .topb:hover{
             font-style: italic;
             font-size:12px;
-            background-color:#004864;
+            /*background-color:#004864;*/
             font-family:cursive,"Comic Sans MS","serif";
-            color:white;
+            /*color:#D16500;*/
+            color:#A70000;
         }
         .topb{
             font-size:12px;

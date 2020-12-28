@@ -1,6 +1,7 @@
         body{
             width:70%;
             font-family:"Comic Sans MS";
+            background: #F7F7F7;
          }
 
           .headings {
@@ -13,7 +14,8 @@
              text-transform:uppercase;
              font-family:Georgia;
              color:#0088dd;
-             text-align: center ;
+             text-align: center;
+             line-height:0.5;
           }
 
         .penguin-baby {
@@ -45,15 +47,15 @@
 
 
          }
-
-         hr{
-            line-color:gray;
-         }
-
          #headings{
          }
 
          .gallery{
-            width: 1000px;
-            overflow:;
+            width: 500px;
+            border: none;
+            float:center;
          }
+
+         .info-tabs{
+            top:200px;
+          }
