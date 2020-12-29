@@ -38,6 +38,13 @@
 
          }
 
+         .wings{
+           width: 200px;
+           float: right;
+           margin-right: 6px;
+           margin-bottom: 6px;
+         }
+
          .life-cycle{
               width: 150px;
               float: left;

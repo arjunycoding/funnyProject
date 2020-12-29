@@ -22,10 +22,10 @@
       height:70px;
       border: none;
       outline: none;
-      text-align: left;
+      text-align: center;
       cursor:pointer;
       transition: 0.3s;
-      font-size: 17px;
+      font-size: 15px;
     }
 
     /* Change background color of buttons on hover */
@@ -48,9 +48,10 @@
       width:70%;
       overflow-y: auto;
       overflow-x: hidden;
-
     }
 
     sideb{
-     center-align: 100px;
+     text-align:center;
+     font-size:10px;
+
     }
