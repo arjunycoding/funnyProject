@@ -1,5 +1,18 @@
-    .welcome!{
-    background:red;
-    color:white;
+    body{
+    background:white;
+    color:green;
+    letter-spacing:0.05em;
 
+    }
+    .form{
+    background:white;
+    color:red;
+    }
+    h1{
+    text-transform:uppercase;
+    letter-spacing:0.2em;
+    }
+    h2{
+
+    letter-spacing:0.1em;
     }
