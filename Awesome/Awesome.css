@@ -1,13 +1,14 @@
     body{
     background:white;
-    color:green;
+    color:black;
     letter-spacing:0.05em;
     font-family: Comic Sans MS, "Arial";
     }
     h1{
-
+    color: rgb(0,225,0);
     letter-spacing:0.2em;
     }
     h2{
+    color: green;
     letter-spacing:0.1em;
     }
