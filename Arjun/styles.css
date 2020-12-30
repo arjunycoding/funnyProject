@@ -11,7 +11,7 @@
          }
 
          .subheadings{
-            color:teal;
+            color:coral;
              font-family: cursive;
              text-transform: capitalize;
              font-weight:bold;
@@ -77,3 +77,12 @@
          .info-tabs{
             top:200px;
           }
+
+                  .time {
+                      float:right;
+                      font-size:40px;
+                      background:black;
+                      color:white;
+                      border:black;
+                      font-family:;
+                  }
