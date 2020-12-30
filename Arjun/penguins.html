@@ -7,12 +7,11 @@
     <link rel="stylesheet"  href="top-bar.css" />
     <link rel="stylesheet"  href="sidebar.css" />
     <link rel="stylesheet"  href="styles.css" />
-    <link rel = ""/>
+    <link rel="stylesheet"  href="table.css" />
 </head>
 <body>
 
 <!-- Top Bar -->
-k
 <div  class = "topBar">
     <button class = "topb">about</button>
     <button class = "topb">articles</button>
@@ -35,6 +34,7 @@ k
 <h4 class = "main-headings">These black and white birds</h4>
 <h6 class = "main-headings author">By Arjun Yuvaraj</h6>
 <hr/>
+
 <div class = "info-tabs">
     <div class="tab">
         <button class="tablinks sideb" onclick="openCity(event, 'Londen')"  id="defaultOpen">Intro</button>
@@ -42,13 +42,14 @@ k
         <button class="tablinks sideb" onclick="openCity(event, 'Swimming')">Swimming</button>
         <button class="tablinks sideb" onclick="openCity(event, 'Paris')">Life Cycle</button>
         <button class="tablinks sideb" onclick="openCity(event, 'gallery')">Image Gallery</button>
+        <button class="tablinks sideb" onclick="openCity(event, 'fun-facts')">Fun Facts</button>
         <button class="tablinks sideb" onclick="openCity(event, 'Tokyo')">What Do you Think?</button>
 
     </div>
 
     <div id="Londen" class="tabcontent sideb">
         <h3 class = "headings">Introduction</h3>
-        <img  class = "penguin-baby" src = "penguin-baby.png">
+            <img  class = "penguin-baby" src = "penguin-baby.png">
         <p>So I bet that you think that emperor penguins are just regular penguins and they have black and white feathers.
         But if you think I am wrong here is a quick example of how cool emperor penguins. So if you took an emperor penguin and an average 9-year-old.
         Now put them back to back and they will be the same height! So now do you have a different perspective about emperor penguin?
@@ -77,6 +78,8 @@ k
             This helps them stay safe from their predators.
             Some of their predators are leopard and fur seals, sea lions, sharks and killer whales.
         </p>
+        <p>Here is a quick viedo fo the pengunin swimming!</p>
+        <a href = "https://www.youtube.com/watch?v=A9mbCNs47FI">Click here for a vedio of a penguin swimming!</a>
 
     </div>
 
@@ -92,16 +95,48 @@ k
         </p>
     </div>
 
+    <div id="fun-facts" class="tabcontent sideb">
+        <h3 class = "headings">Fun Facts!</h3>
+        <h4 class = "subheadings">Tallest Of Them All</h4>
+        <p>did you know that emeperor penfuins are the tallest penguins around well take a look at the table belwo to see!</p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Penguin Name</th>
+                    <th>Height</th>
+                    <th>Picture</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Emperor Penguin</td>
+                    <td>3.6 - 4.3ft</td>
+                    <td> <img class = "table-img" src = "penguin-baby.png"> </td>
+                </tr>
+                <tr>
+                    <td>Little Penguin</td>
+                    <td>12 - 14in</td>
+                    <td><img class = "table-img" src = "little-penguin.png"></td>
+                </tr>
+                <tr>
+                    <td>Galapagos penguin</td>
+                    <td>19 - 21in</td>
+                    <td><img class = "table-img" src = "galapagos-penguin.png"></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
     <div id="gallery" class="tabcontent sideb">
         <h3 class = "headings">Image Gallary</h3>
         <p>
             <img class = "gallery" src = "penguin-gallery.png">
         </p>
     </div>
-
     <div id="Tokyo" class="tabcontent sideb">
         <h3 class = "headings">What Do You Think?</h3>
-        <form>
+        <form action = "sumbit.html" method = "post">
             <label>Did you learn something?</label>
             <br/>
             <br/>
