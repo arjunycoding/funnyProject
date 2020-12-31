@@ -8,7 +8,7 @@
             color:teal;
             font-family: cursive;
             text-transform: capitalize;
-         }
+            }
 
          .subheadings{
             color:coral;
@@ -65,11 +65,9 @@
 
 
          }
-         #headings{
-         }
 
          .gallery{
-            width: 500px;
+            width: 100%;
             border: none;
             float:center;
          }

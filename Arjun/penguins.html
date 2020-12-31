@@ -8,6 +8,8 @@
     <link rel="stylesheet"  href="sidebar.css" />
     <link rel="stylesheet"  href="styles.css" />
     <link rel="stylesheet"  href="table.css" />
+    <link rel="stylesheet"  href="login.css" />
+    <link rel="stylesheet"  href="login.js" />
 </head>
 <body onload="startTime()">
 
@@ -16,10 +18,37 @@
     <button class = "topb">about</button>
     <button class = "topb">articles</button>
     <button class = "topb pics/">your profile</button>
-    <button class = "topb pics/"> sign in</button>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class = "topb pics/"> sign in</button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="penguin.png" alt="penguin" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button class = "login-button"  type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button class = "login-button" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
     <button class = "topb pics/">settings</button>
     <input class = "search" type="text" name="search" placeholder="Search..">
-    <button class = "time" id="txt"></button>
 </div>
 
 <br/>
@@ -185,6 +214,20 @@
 
         </form>
     </div>
+</div>
+<div class = "">
+    <h2>Penguins Are going EXTINCT!</h2>
+    <p>here are somethings you can do to stop it:</p>
+    <p>
+        Speak up! ...<br/>
+        Power your home with renewable energy. ...<br/>
+        Weatherize, weatherize, weatherize. ...<br/>
+        Invest in energy-efficient appliances. ...<br/>
+        Reduce water waste. ...<br/>
+        Actually eat the food you buy—and make less of it meat. ...<br/>
+        Buy better bulbs. ...<br/>
+        Pull the plug(s).<br/>
+    </p>
 </div>
 </body>
 <script src = "sidebar.js"></script>
