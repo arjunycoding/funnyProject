@@ -1,13 +1,18 @@
     html, body {
-        background:white;
+
         color:black;
         letter-spacing:0.05em;
         font-family: Comic Sans MS, "Arial";
         height: 100%;
+        background-image: url("https://i.pinimg.com/736x/b0/f2/81/b0f281339d81aa734a101377c21c8570.jpg");
+
+
     }
+
     h1 {
         color: rgb(0,225,0);
         letter-spacing:0.2em;
+
 
     }
     h2 {
@@ -26,6 +31,8 @@
         height:30%;
         overflow-y:auto;
         overflow-x:hidden;
+        background-color:white;
+
     }
     #form2 {
             float:left;
@@ -36,16 +43,50 @@
             height:30%;
             overflow-y:auto;
             overflow-x:hidden;
+             background-color:white;
+
         }
     .welcome{
         float:left;
         border:3px solid red;
         margin:3px 3px 3px 3px;
         padding:3px 3px 3px 3px;
-        width:15%;
+        width:100%;
         height:15%;
         overflow-y:auto;
+        background-color:white;
 
+        }
+        #latest-post{
+          float:left;
+          border:3px solid red;
+          margin:3px 3px 3px 3px;
+          padding:3px 3px 3px 3px;
+          width:15%;
+          height:40%;
+          overflow-y:auto;
+          background-color:white;
 
+         }
+         #intro{
+          float:left;
+          border:3px solid red;
+          margin:3px 3px 3px 3px;
+          padding:3px 3px 3px 3px;
+          width:20%;
+          height:40%;
+          overflow-y:auto;
+          background-color:white;
 
-    }
+          }
+          figure{
+            float:left;
+            border:3px solid red;
+            margin:3px 3px 3px 3px;
+            padding:3px 3px 3px 3px;
+            width:25%;
+            height:40%;
+            overflow-y:auto;
+            background-color:white;
+
+           }
