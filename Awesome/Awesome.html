@@ -8,110 +8,114 @@
     <link   href="Awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<section class="welcome">
-    <form>
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
-        <br/>
-        <label for="Password">Password:</label>
-        <input type="password" id="Password" name="Password" minlength="8" maxlength="20" required>
-        <br/>
-        <input value="Continue to the awesomeness!" type="submit">
-    </form>
-</section>
-<main>
-    <header>
-        <h1>Welcome to the Awesome Club!!!</h1>
-    </header>
-    <article id="intro">
-        <h2>What is the Awesome Club about?</h2>
-        <p> The awesome club is a place where you do fun activities and bring ideas. Got any ideas? then tell them to the community!!
-            Since it is winter, try to make some 'wintery' ideas! Stummped? Do the form below! Keep being awesome!- <em>Adhithya Yuvaraj Dec 2020-Jan 20201</em> </p>
-    </article>
-</main>
-<figure>
-    <img src="Logo.png" alt="The logo. A smiley face. Has red 'Awesome' on the top and bottom" width="20%" height="20%">
+    <section class="welcome">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+            <br/>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" minlength="8" maxlength="20" required>
+            <br/>
+            <input value="Continue to the awesomeness!" type="submit">
+        </form>
+    </section>
+    <main>
+        <header>
+            <h1>Welcome to the Awesome Club!!!</h1>
+        </header>
+        <article id="intro">
+            <h2>What is the Awesome Club about?</h2>
+            <p> The awesome club is a place where you do fun activities and bring ideas. Got any ideas? then tell them to the community!!
+                Since it is winter, try to make some 'wintery' ideas! Stummped? Do the form below! Keep being awesome!- <em>Adhithya Yuvaraj Dec 2020-Jan 20201</em> </p>
+        </article>
+    </main>
+    <figure>
+        <img src="Logo.png" alt="The logo. A smiley face. Has red 'Awesome' on the top and bottom" width="20%" height="20%">
 
-</figure>
-<form action="form.html" method="POST" class="form">
-    <h2>Try to come up with as many ideas as you can! Write and tick of all the ones you want to do!</h2>
-    <section>
-        <label for="post">Day of submission.(Today) We will know if you are lying or not!</label>
-        <br/>
-        <input type="date" id=post name="present" required>
-        <br/>
-    </section>
-    <section>
-        <span>Do you want to do some fun things over break?</span>
-        <br>
-        <input type="radio" id="yes" name="yes" value="Yes" required >
-        <label for="yes">Yes! :)</label>
-        <br>
-        <input type="radio" id="no" name="yes" value="Yes"required >
-        <label for="no">No(You are going to miss out!) :(</label>
-    </section>
-    <section class="Memories">
-        <label for="Memories">What winter things have you done in the past? Write 'none' if you do not have anything.</label>
-        <br>
-        <textarea id="Memories" name="Memories" rows="5" cols="50" required minlength="4" maxlength="500" ></textarea>
-    </section>
-    <br>
-    <section>
-        <label for="To-do-list">How many things would you want to do this winter?</label>
-        <input  type="number" id="To-do-list" name="To-do-list" placeholder="type a number" min="0" max="100" required >
-    </section>
-    <br>
-    <section>
-        <span>What crafts look fun for you?</span>
-        <nav>
-            </br>
-            <input type="checkbox" id="check" name="check"  value="3-D Snowflake" >
-            <label for="check">3-D Snowflake <a href="https://www.youtube.com/watch?v=lT2oeNkTOAk">Click Here!</a></label>
-            </br>
-            <input type="checkbox" id="check1" name="check"  value="3-D Christmas tree">
-            <label for="check2">3-D Christmas tree <a href="https://www.youtube.com/watch?v=TZAsOQiZMEs">Click Here!</a></label>
-            </br>
-            <input type="checkbox" id="check2" name="check"  value="Origami Santa" >
-            <label for="check2">Snowman chain <a href="https://www.youtube.com/watch?v=FSVBIkCTx08">Click Here!</a></label>
-            </br>
-        </nav>
-    </section>
-    <section>
-        <span> What things will you do with your family? Can you think of any other things to do? Like have a gift giving event or stay up till 12:00am on New Year's Eve?</span>
-        <br>
-        <textarea id="celebrate!" name="celebrate!" rows="5" col="50" required minlength="15" maxlength="1000" ></textarea>
-        <label for="celebrate!"></label>
-    </section>
-    <section>
-        <span>Now narrow down three things you will do over the break by yourself and your family!</span>
-        <br>
-        <label for="final">Write three things that you will do by yourself. Use a minimum of 15-300 words!</label>
-        <br>
-        <textarea id="final" name="final" rows="5" col="50" required minlength="15" maxlength="300" ></textarea>
-        <br>
-        <label for="final1">Write three things that you will do with your family.Use a minimum of 15-300 words!</label>
-        <br>
-        <textarea id="final1" name="final1" rows="5" col="50" required minlength="15" maxlength="300" ></textarea>
-    </section>
-    <section>
-        <h2>Congrats! you finished! Just hit the submit button and we'll get your results! Thank You!</h2>
-        <input value="submit" type="submit">
-    </section>
-</form>
-<br/><br/><br/>
-<form action="form.html" action="POST">
-    <h2>Upload one of your hoilday crafts/decorations! We might share them to the communitity!!! Also record your date! They are both reqiured! </h2><br/>
-    <label for="present">Day of submission.(Today) We will know if you are lying or not!</label>
-    <br/>
-    <input type="date" id=present name="present" required>
-    <br/>
-    <label for="Upload">Upload your picture here!!!</label>
-    <br>
-    <input type="file" id="Upload" name="Upload" value="Browse" required>
-    <br>
-    <input type="submit" value="submit(It will be uploaded!)">
-</form>
-
+    </figure>
+    <div id="form1">
+        <form action="form.html" method="POST">
+            <h2>Try to come up with as many ideas as you can! Write and tick of all the ones you want to do!</h2>
+            <section>
+                <label for="post">Day of submission.(Today) We will know if you are lying or not!</label>
+                <br/>
+                <input type="date" id=post name="present" required>
+                <br/>
+            </section>
+            <section>
+                <span>Do you want to do some fun things over break?</span>
+                <br>
+                <input type="radio" id="yes" name="yes" value="Yes" required >
+                <label for="yes">Yes! :)</label>
+                <br>
+                <input type="radio" id="no" name="yes" value="Yes"required >
+                <label for="no">No(You are going to miss out!) :(</label>
+            </section>
+            <section class="Memories">
+                <label for="Memories">What winter things have you done in the past? Write 'none' if you do not have anything.</label>
+                <br>
+                <textarea id="Memories" name="Memories" rows="5" cols="50" required minlength="4" maxlength="500" ></textarea>
+            </section>
+            <br>
+            <section>
+                <label for="To-do-list">How many things would you want to do this winter?</label>
+                <input  type="number" id="To-do-list" name="To-do-list" placeholder="type a number" min="0" max="100" required >
+            </section>
+            <br>
+            <section>
+                <span>What crafts look fun for you?</span>
+                <nav>
+                    </br>
+                    <input type="checkbox" id="check" name="check"  value="3-D Snowflake" >
+                    <label for="check">3-D Snowflake <a href="https://www.youtube.com/watch?v=lT2oeNkTOAk">Click Here!</a></label>
+                    </br>
+                    <input type="checkbox" id="check1" name="check"  value="3-D Christmas tree">
+                    <label for="check2">3-D Christmas tree <a href="https://www.youtube.com/watch?v=TZAsOQiZMEs">Click Here!</a></label>
+                    </br>
+                    <input type="checkbox" id="check2" name="check"  value="Origami Santa" >
+                    <label for="check2">Snowman chain <a href="https://www.youtube.com/watch?v=FSVBIkCTx08">Click Here!</a></label>
+                    </br>
+                </nav>
+            </section>
+            <section>
+                <span> What things will you do with your family? Can you think of any other things to do? Like have a gift giving event or stay up till 12:00am on New Year's Eve?</span>
+                <br>
+                <textarea id="celebrate!" name="celebrate!" rows="5" col="50" required minlength="15" maxlength="1000" ></textarea>
+                <label for="celebrate!"></label>
+            </section>
+            <section>
+                <span>Now narrow down three things you will do over the break by yourself and your family!</span>
+                <br>
+                <label for="final">Write three things that you will do by yourself. Use a minimum of 15-300 words!</label>
+                <br>
+                <textarea id="final" name="final" rows="5" col="50" required minlength="15" maxlength="300" ></textarea>
+                <br>
+                <label for="final1">Write three things that you will do with your family.Use a minimum of 15-300 words!</label>
+                <br>
+                <textarea id="final1" name="final1" rows="5" col="50" required minlength="15" maxlength="300" ></textarea>
+            </section>
+            <section>
+                <input value="submit" type="submit">
+            </section>
+        </form>
+    </div>
+    <br/><br/><br/>
+    <div class="form">
+        <form action="form.html" method="POST" class="form" id="upload">
+            <h3>Upload one of your hoilday crafts/decorations. We might share them to the communitity!  All questions are reqiured. </h3><br/>
+            <label for="present">Day of submission.(Today) We will know if you are lying or not!</label>
+            <br/>
+            <input type="date" id=present name="present" required>
+            <br/>
+            <label for="Upload">Upload your picture here!!!</label>
+            <br>
+            <input type="file" id="Upload" name="Upload" value="Browse" required>
+            <br>
+            <input type="text" value="Write your name!" id="name" name="name">
+            <br/>
+            <input type="submit" value="submit(It will be uploaded!)">
+        </form>
+    </div>
 
 </body>
 </html>

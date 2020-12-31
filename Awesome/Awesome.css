@@ -1,14 +1,29 @@
-    body{
-    background:white;
-    color:black;
-    letter-spacing:0.05em;
-    font-family: Comic Sans MS, "Arial";
+    html, body {
+        background:white;
+        color:black;
+        letter-spacing:0.05em;
+        font-family: Comic Sans MS, "Arial";
+        height: 100%;
     }
-    h1{
-    color: rgb(0,225,0);
-    letter-spacing:0.2em;
+    h1 {
+        color: rgb(0,225,0);
+        letter-spacing:0.2em;
+
     }
-    h2{
-    color: green;
-    letter-spacing:0.1em;
+    h2 {
+        color: green;
+        letter-spacing:0.1em;
+    }
+    .form {
+        text-align: center;
+    }
+    #form1 {
+        float:right;
+        border:3px solid red;
+        margin:3px;
+        padding:3px;
+        width:20%;
+        height: 30%;
+        overflow-y:auto;
+        overflow-x:auto;
     }
