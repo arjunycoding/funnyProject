@@ -1,14 +1,95 @@
-    body{
-    background:white;
-    color:black;
-    letter-spacing:0.05em;
-    font-family: Comic Sans MS, "Arial";
+    html, body {
+
+        color:black;
+        letter-spacing:0.05em;
+        font-family: Comic Sans MS, "Arial";
+        height: 100%;
+        width: 100%;
+        background-image: url("https://i.pinimg.com/736x/b0/f2/81/b0f281339d81aa734a101377c21c8570.jpg");
+
+
     }
-    h1{
-    color: rgb(0,225,0);
-    letter-spacing:0.2em;
+
+    h1 {
+        color: rgb(0,225,0);
+        letter-spacing:0.2em;
+
+
     }
-    h2{
-    color: green;
-    letter-spacing:0.1em;
+    h2 {
+        color: green;
+        letter-spacing:0.1em;
     }
+    .form {
+        text-align: center;
+    }
+    #form1 {
+        float:right;
+        border:3px solid red;
+        margin:3px 3px 3px 3px;
+        padding:3px 3px 3px 3px;
+        width:49%;
+        height:30%;
+        overflow-y:auto;
+        overflow-x:hidden;
+        background-color:white;
+
+    }
+    #form2 {
+            float:left;
+            border:3px solid red;
+            margin:3px 3px 3px 3px;
+            padding:0px 0px 0px 0px;
+            width:49%;
+            height:30%;
+            overflow-y:auto;
+            overflow-x:hidden;
+            background-color:white;
+
+        }
+    .welcome{
+        float:left;
+        border:3px solid red;
+        margin:3px 3px 3px 3px;
+        padding:3px 3px 3px 3px;
+        width:87%;
+        height:15%;
+        overflow-y:auto;
+        background-color:white;
+
+        }
+        #latest-post{
+          float:left;
+          border:3px solid red;
+          margin:3px 3px 3px 3px;
+          padding:3px 3px 3px 3px;
+          width:49%;
+          height:40%;
+          overflow-y:auto;
+          background-color:white;
+
+         }
+
+         #intro{
+          float:left;
+          border:3px solid red;
+          margin:3px 3px 3px 3px;
+          padding:3px 3px 3px 3px;
+          width:48%;
+          height:48%;
+          overflow-y:auto;
+          background-color:white;
+
+          }
+           .logo{
+            float:right;
+            border:3px solid red;
+            margin:3px 3px 3px 3px;
+            padding:3px 3px 3px 3px;
+            width:10%;
+            height:15%;
+            overflow-y:auto;
+            background-color:white;
+            text-align:center;
+
+            }
