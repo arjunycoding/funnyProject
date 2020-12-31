@@ -10,6 +10,9 @@
       background-color: white;
       width: 305;
       height: auto;
+      display:inline-flex;
+      align-items:center;
+
     }
 
     /* Style the buttons inside the tab */
@@ -18,7 +21,7 @@
       background-color: inherit;
       color: black;
       padding: 22px 16px;
-      width: 100%;
+      width: 195.6px;
       height:70px;
       border: none;
       outline: none;
@@ -45,9 +48,10 @@
       border: 1px solid #ccc;
       border-left: 1px solid gray;
       height:350px;
-      width:70%;
+      width:1371px;
       overflow-y: auto;
       overflow-x: hidden;
+      background:white;
     }
 
     sideb{

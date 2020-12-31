@@ -1,6 +1,6 @@
         body{
             width:70%;
-            font-family:"Comic Sans MS";
+            font-family:"Comic Sans MS" , Helvetica;
             background: #F7F7F7;
          }
 
@@ -9,6 +9,13 @@
             font-family: cursive;
             text-transform: capitalize;
          }
+
+         .subheadings{
+            color:coral;
+             font-family: cursive;
+             text-transform: capitalize;
+             font-weight:bold;
+         }
           .main-headings{
              text-shadow:2px 2px 3px #666666;
              text-transform:uppercase;
@@ -16,6 +23,10 @@
              color:#0088dd;
              text-align: center;
              line-height:0.5;
+          }
+
+          .author{
+            text-decoration:underline;
           }
 
         .penguin-baby {
@@ -39,7 +50,7 @@
          }
 
          .wings{
-           width: 200px;
+           width: 350px;
            float: right;
            margin-right: 6px;
            margin-bottom: 6px;
@@ -66,3 +77,12 @@
          .info-tabs{
             top:200px;
           }
+
+                  .time {
+                      float:right;
+                      font-size:40px;
+                      background:black;
+                      color:white;
+                      border:black;
+                      font-family:;
+                  }
