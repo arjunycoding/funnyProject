@@ -30,8 +30,8 @@
             border: 2px solid black;
             font-family: "monospace", fantasy;
             padding: 5px;
-            width:50%px;
-            height:80%px;
+            width:50%;
+            height:80%;
             position:absolute;
             z-index:1;
             overflow-y: auto;

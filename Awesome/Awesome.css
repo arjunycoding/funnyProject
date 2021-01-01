@@ -5,7 +5,8 @@
         font-family: Comic Sans MS, "Arial";
         height: 100%;
         width: 100%;
-        background-image: url("https://i.pinimg.com/736x/b0/f2/81/b0f281339d81aa734a101377c21c8570.jpg");
+        background-color:white;
+
 
 
     }
@@ -25,7 +26,7 @@
     }
     #form1 {
         float:right;
-        border:3px solid red;
+        border:3px solid black;
         margin:3px 3px 3px 3px;
         padding:3px 3px 3px 3px;
         width:49%;
@@ -37,9 +38,9 @@
     }
     #form2 {
             float:left;
-            border:3px solid red;
-            margin:3px 3px 3px 3px;
-            padding:0px 0px 0px 0px;
+            border:3px solid black;
+             margin:5px 5px 5px 5px;
+             padding:5px 5px 5px 5px;
             width:49%;
             height:30%;
             overflow-y:auto;
@@ -47,49 +48,38 @@
             background-color:white;
 
         }
-    .welcome{
+    /*.welcome{
         float:left;
-        border:3px solid red;
-        margin:3px 3px 3px 3px;
-        padding:3px 3px 3px 3px;
+        border:3px solid black;
+       margin:5px 5px 5px 5px;
+       padding:5px 5px 5px 5px;
         width:87%;
         height:15%;
         overflow-y:auto;
         background-color:white;
 
-        }
-        #latest-post{
-          float:left;
-          border:3px solid red;
-          margin:3px 3px 3px 3px;
-          padding:3px 3px 3px 3px;
-          width:49%;
-          height:40%;
-          overflow-y:auto;
-          background-color:white;
+        }*/
 
-         }
-
-         #intro{
-          float:left;
-          border:3px solid red;
-          margin:3px 3px 3px 3px;
-          padding:3px 3px 3px 3px;
-          width:48%;
-          height:48%;
-          overflow-y:auto;
-          background-color:white;
+          #article{
+             float:left;
+             margin:15% 25% 25% 25%;
+             padding:5px 5px 5px 5px;
+             width:50%;
+             overflow-y:auto;
+             background-color:white;
+             box-align:center;
 
           }
            .logo{
             float:right;
-            border:3px solid red;
-            margin:3px 3px 3px 3px;
-            padding:3px 3px 3px 3px;
-            width:10%;
-            height:15%;
-            overflow-y:auto;
+
+            margin:5px 5px 0px 5px;
+            padding:0px 0px 5px 5px;
+            width:15%;
+            height:25%;
+
             background-color:white;
-            text-align:center;
+            text-align:right;
 
             }
+
