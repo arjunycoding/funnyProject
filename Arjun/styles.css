@@ -76,11 +76,26 @@
             top:200px;
           }
 
-                  .time {
-                      float:right;
-                      font-size:40px;
-                      background:black;
-                      color:white;
-                      border:black;
-                      font-family:;
-                  }
+          .time {
+              float:right;
+              font-size:40px;
+              background:black;
+              color:white;
+              border:black;
+              font-family:;
+          }
+
+          .extinct{
+            width:70%;
+            font-family:"Comic Sans MS" , Helvetica;
+            background: #F7F7F7;
+            float:right;
+            width:500px;
+            border:2px solid lightBlue;
+            padding:10px 10px;
+            border-radius:10px;
+          }
+
+          ol{
+            list-style-type: decimal-leading-zero;
+          }
