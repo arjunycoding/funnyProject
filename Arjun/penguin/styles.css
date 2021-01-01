@@ -11,7 +11,7 @@
             }
 
          .subheadings{
-            color:coral;
+             color:coral;
              font-family: cursive;
              text-transform: capitalize;
              font-weight:bold;
@@ -61,15 +61,21 @@
               float: left;
               margin-right: 6px;
               margin-bottom: 6px;
-
-
-
          }
 
          .gallery{
             width: 100%;
             border: none;
             float:center;
+         }
+
+         .penguin-exetinct{
+          width: 500px;
+          float: right;
+          margin-right: 6px;
+          margin-bottom: 6px;
+          border:2px double coral;
+          border-radius:15px;
          }
 
          .info-tabs{
@@ -91,9 +97,13 @@
             background: #F7F7F7;
             float:right;
             width:500px;
-            border:2px solid lightBlue;
+            height:250px;
+            overflow-x:hidden;
+            overflow-y:auto;
+            border:2px double blue;
             padding:10px 10px;
             border-radius:10px;
+            margin:1px;
           }
 
           ol{
