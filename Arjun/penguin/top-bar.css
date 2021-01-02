@@ -1,5 +1,4 @@
         .topb:hover{
-            font-style: italic;
             font-size:12px;
             /*background-color:#004864;*/
             font-family:cursive,"Comic Sans MS","serif";
@@ -33,6 +32,13 @@
             top:0px;
             left:0px;
             background:#00709C;
+        }
+
+        .advice{
+            width:240px;
+        }
+        .advice:hover{
+            font-size:1px;
         }
 
          input[type=text].search {
