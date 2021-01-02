@@ -9,7 +9,6 @@
     <link rel="stylesheet"  href="styles.css" />
     <link rel="stylesheet"  href="table.css" />
     <link rel="stylesheet"  href="login.css" />
-    <link rel="stylesheet"  href="login.js" />
 </head>
 <body onload="startTime()">
 
@@ -40,9 +39,10 @@
 <div class = "info-tabs">
     <div class="tab">
         <button class="tablinks sideb" onclick="openCity(event, 'Londen')"  id="defaultOpen">Intro</button>
-        <button class="tablinks sideb" onclick="openCity(event, 'wings-of-penguin')">Why Do Penguins Have <br/>Wings If They Can't FLy</button>
+        <button class="tablinks sideb font-wings" onclick="openCity(event, 'wings-of-penguin')">Why Do Penguins Have <br/>Wings If They Can't FLy</button>
         <button class="tablinks sideb" onclick="openCity(event, 'Swimming')">Swimming</button>
         <button class="tablinks sideb" onclick="openCity(event, 'Paris')">Life Cycle</button>
+        <button class="tablinks sideb" onclick="openCity(event, 'extinct')">Penguins Are Going EXTINCT</button>
         <button class="tablinks sideb" onclick="openCity(event, 'gallery')">Image Gallery</button>
         <button class="tablinks sideb" onclick="openCity(event, 'fun-facts')">Fun Facts</button>
         <button class="tablinks sideb" onclick="openCity(event, 'Tokyo')">What Do you Think?</button>
@@ -130,6 +130,22 @@
             </table>
         </div>
 
+    <div id="extinct" class="tabcontent sideb">
+        <img  class = "penguin-exetinct" src = "penguin-exetinct.png">
+        <h3 class = "headings">Penguins Are going EXTINCT!</h3>
+            <p>here are somethings you can do to stop it:</p>
+        <ol>
+                <li>Speak up! ...</li>
+                <li>Power your home with renewable energy. ...<br/></li>
+                <li>Weatherize, weatherize, weatherize. ...<br/></li>
+                <li>Invest in energy-efficient appliances. ...<br/></li>
+                <li>Reduce water waste. ...<br/></li>
+                <li>Actually eat the food you buy—and make less of it meat. ...<br/></li>
+                <li>Buy better bulbs. ...<br/></li>
+                <li>Pull the plug(s).<br/></li>
+            </ol>
+    </div>
+
     <div id="gallery" class="tabcontent sideb">
         <h3 class = "headings">Image Gallary</h3>
         <p>
@@ -186,20 +202,8 @@
 
         </form>
     </div>
+
 </div>
-<div class = "extinct">
-    <h2>Penguins Are going EXTINCT!</h2>
-    <p>here are somethings you can do to stop it:</p>
-    <ol>
-        <li>Speak up! ...</li>
-        <li>Power your home with renewable energy. ...<br/></li>
-        <li>Weatherize, weatherize, weatherize. ...<br/></li>
-        <li>Invest in energy-efficient appliances. ...<br/></li>
-        <li>Reduce water waste. ...<br/></li>
-        <li>Actually eat the food you buy—and make less of it meat. ...<br/></li>
-        <li>Buy better bulbs. ...<br/></li>
-        <li>Pull the plug(s).<br/></li>
-    </ol>
-</div>
+
 </body>
 <script src = "sidebar.js"></script>

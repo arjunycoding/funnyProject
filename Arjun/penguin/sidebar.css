@@ -10,8 +10,8 @@
       background-color: white;
       width: 305;
       height: auto;
-      display:inline-flex;
       align-items:center;
+      display:flex;
 
     }
 
@@ -21,7 +21,7 @@
       background-color: inherit;
       color: black;
       padding: 22px 16px;
-      width: 195.6px;
+      width: 195.8px;
       height:70px;
       border: none;
       outline: none;
@@ -48,14 +48,8 @@
       border: 1px solid #ccc;
       border-left: 1px solid gray;
       height:350px;
-      width:1373px;
+      width:1568px;
       overflow-y: auto;
       overflow-x: hidden;
       background:white;
-    }
-
-    sideb{
-     text-align:center;
-     font-size:10px;
-
     }
