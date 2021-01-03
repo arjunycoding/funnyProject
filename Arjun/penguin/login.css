@@ -34,11 +34,21 @@ input.login{
             text-align:center;
         }
 
-        form{
+        .login-form{
             float:right;
         }
+
+        .login-img{
+            border: 2px solid coral;
+             border-radius: 10px;
+             margin:-5% 10% 5% 10%;
+             width:400px;
+
+            float: left;
+        }
+
         body{
              width:70%;
              font-family:"Comic Sans MS" , Helvetica;
-             background-image: url("login-background.png");
+             background:lightBlue;
          }
