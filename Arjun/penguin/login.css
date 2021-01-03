@@ -72,3 +72,8 @@ a:link {
      text-decoration: none;
      color:white;
     }
+
+    fieldset{
+    border-color:coral;
+    border-radius:5px;
+    }
