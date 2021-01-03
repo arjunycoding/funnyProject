@@ -1,0 +1,44 @@
+input.login{
+    border:2px solid teal;
+}
+
+input.login{
+    border:2px solid teal;
+}
+
+.submit:hover{
+            font-size:12px;
+            /*background-color:#004864;*/
+            font-family:cursive,"Comic Sans MS","serif";
+            /*color:#D16500;*/
+            color:white;
+            background:#005F85;
+            font-weight:bold;
+            word-spacing:0.3em;
+            letter-spacing:0.02em;
+            text-align:center;
+        }
+        .submit{
+            font-size:12px;
+            border:none;
+            width:70px;
+            height:30px;
+            top:0px;
+            left:0px;
+            background-color:#00709C;
+            color:white;
+            padding:0px 10px 0px 10px;
+            text-transform: uppercase;
+            word-spacing:0.3em;
+            letter-spacing:0.02em;
+            text-align:center;
+        }
+
+        form{
+            float:right;
+        }
+        body{
+             width:70%;
+             font-family:"Comic Sans MS" , Helvetica;
+             background-image: url("login-background.png");
+         }

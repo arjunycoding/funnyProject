@@ -1,7 +1,7 @@
         body{
             width:70%;
             font-family:"Comic Sans MS" , Helvetica;
-            background: #F7F7F7;
+            background: lightBlue;
          }
 
           .headings {
@@ -23,6 +23,7 @@
              color:#0088dd;
              text-align: center;
              line-height:0.5;
+             margin:;
           }
 
           .author{
