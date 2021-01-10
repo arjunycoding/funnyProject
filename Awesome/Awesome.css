@@ -1,6 +1,4 @@
     html, body {
-
-        color:black;
         text-align:center;
         font-family: Arial;
         height: 100%;
@@ -10,26 +8,6 @@
             border:30px solid green;
             margin:0px;
             padding:0px;
-            }
-
-            a:link {
-             text-decoration: none;
-             color:green;
-            }
-
-            a:visited {
-             text-decoration: none;
-             color:green;
-            }
-
-            a:hover {
-             text-decoration:none;
-             color:green;
-            }
-
-            a:active {
-             text-decoration: none;
-             color:green;
             }
 
             h1 {
