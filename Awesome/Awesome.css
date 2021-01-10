@@ -4,59 +4,66 @@
         text-align:center;
         font-family: Arial;
         height: 100%;
-
         background-color:white;
     }
-    body{
-    border:30px solid green;
-    margin:0px;
-    padding:0px;
-    }
+            body{
+            border:30px solid green;
+            margin:0px;
+            padding:0px;
+            }
 
-    a:link {
-     text-decoration: none;
-     color:green;
-    }
+            a:link {
+             text-decoration: none;
+             color:green;
+            }
 
-    a:visited {
-     text-decoration: none;
-     color:green;
-    }
+            a:visited {
+             text-decoration: none;
+             color:green;
+            }
 
-    a:hover {
-     text-decoration:none;
-     color:green;
-    }
+            a:hover {
+             text-decoration:none;
+             color:green;
+            }
 
-    a:active {
-     text-decoration: none;
-     color:green;
-    }
+            a:active {
+             text-decoration: none;
+             color:green;
+            }
 
-    h1 {
-        color:rgb(0,111,0);
-        letter-spacing:0.2em;
+            h1 {
+                color:rgb(0,111,0);
+                letter-spacing:0.2em;
+             }
 
-
-    }
-
-    h2 {
-        color: green;
-        letter-spacing:0.1em;
-    }
-    .form {
-        text-align: center;
-    }
-    #form1 {
-        text-align:center;
-    }
-    #form2 {
-     text-align:center;
-    }
+            h2 {
+                color: green;
+                letter-spacing:0.1em;
+            }
+            .form {
+                text-align: center;
+            }
+            #form1 {
+                text-align:center;
+            }
+            #form2 {
+             text-align:center;
+            }
 
 
           #article{
              float:left;
+             margin:10% 25% 25% 25%;
+             padding:5px 5px 5px 5px;
+             width:50%;
+             overflow-y:auto;
+             background-color:white;
+             box-align:center;
+
+          }
+          #form1{
+            float:left;
              margin:10% 25% 25% 25%;
              padding:5px 5px 5px 5px;
              width:50%;
@@ -98,7 +105,6 @@
                 border:none;
                 background-color:rgb(220,220,220);
                 padding:1%;
-                border:10px solid white;
                 height:100%
                 width:100%
                 font-size:20px;
