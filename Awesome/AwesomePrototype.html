@@ -6,20 +6,18 @@
     <link rel='icon' href='Logo.png' type='image/x-icon'/>
     <link href="Awesome.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-<h1 style="color:rgb(0,111,0);">Awesome Club!</h1>
-<h3>By Adhithya Yuvaraj. Thanks to Github and my family for helping me!</h3>
+<h1>Awesome Club!</h1>
 
-
+<hr/>
 
 <div class = "info-tabs">
     <div class="tab">
-        <button class="tablinks sideb" onclick="openCity(event, 'intro')" >Home</button>
-        <button class="tablinks sideb" onclick="openCity(event, 'form1')">Uploading Station</button>
-        <button class="tablinks sideb" onclick="openCity(event, 'form2')">Winter Fun Form</button>
+        <button class="tablinks sideb" onclick="openCity(event, 'intro')"  id="defaultOpen">Home</button>
+        <button class="tablinks sideb font-wings" onclick="openCity(event, 'form1')">Winter Fun</button>
+        <button class="tablinks sideb" onclick="openCity(event, 'form2')">Uploading Station</button>
     </div>
-<hr>
-    <div id="intro" class="tabcontent sideb" >
+
+    <div id="intro" class="tabcontent sideb">
         <main id="article">
             <article>
                 <header>
@@ -46,6 +44,9 @@
         <div class="form">
             <form action="form.html" method="GET" class="form" id="upload-picture">
                 <h3>Upload one of your hoilday crafts/decorations. We might share them to the communitity!  All questions are reqiured. </h3><br/>
+                <label for="present">Day of submission.(Today) We will know if you are lying or not!</label>
+                <br/>
+                <input type="date" id=present name="present" required>
                 <br/>
                 <label for="Upload">Upload your picture here!!!</label>
                 <br>
@@ -63,7 +64,12 @@
         <div class="form">
             <form action="form.html" method="GET">
                 <h2>Try to come up with as many ideas as you can! Write and tick of all the ones you want to do!</h2>
-
+                <section>
+                    <label for="post">Day of submission.(Today) We will know if you are lying or not!</label>
+                    <br/>
+                    <input type="date" id=post name="present" required>
+                    <br/>
+                </section>
                 <br>
                 <section>
                     <span>Do you want to do some fun things over break?</span>
@@ -125,12 +131,10 @@
                     <input value="submit" type="submit">
                 </section>
             </form>
-        </div>
-
-
     </div>
-    <script src = "../Arjun/penguin/sidebar.js"></script>
-    </div>
-    </body>
 
-</html>
+
+
+</div>
+</body>
+<script src = "../Arjun/penguin/sidebar.js"></script>
