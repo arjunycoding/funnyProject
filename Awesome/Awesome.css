@@ -3,7 +3,9 @@
         font-family: Arial;
         height: 100%;
         background-color:white;
-    }
+        }
+
+
             body{
             border:30px solid green;
             margin:0px;
@@ -87,6 +89,7 @@
                 width:100%
                 font-size:20px;
                 border:3px solid black;
+                transition-duration: 1s;
 
 
              }
@@ -99,5 +102,7 @@
                  .tab button.active {
                    background-color: white;
 
+
                  }
+
 
