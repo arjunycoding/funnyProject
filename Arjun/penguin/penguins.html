@@ -10,7 +10,7 @@
     <link rel="stylesheet"  href="table.css" />
     <link rel="stylesheet"  href="login.css" />
 </head>
-<body onload="startTime()">
+<body>
 
 <!-- Top Bar -->
 <div  class = "topBar">
@@ -26,10 +26,6 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 <h1 class = "main-headings">Penguins</h1>
 <h4 class = "main-headings">These black and white birds</h4>
@@ -38,11 +34,12 @@
 
 <div class = "info-tabs">
     <div class="tab">
-        <button class="tablinks sideb" onclick="openCity(event, 'Londen')"  id="defaultOpen">Intro</button>
-        <button class="tablinks sideb font-wings" onclick="openCity(event, 'wings-of-penguin')">Why Do Penguins Have <br/>Wings If They Can't FLy</button>
+        <button class="tablinks sideb" onclick="openCity(event, 'Londen')"  id="defaultOpen">Tall, Taller, Tallest</button>
+        <button class="tablinks sideb font-wings" onclick="openCity(event, 'wings-of-penguin')">Wings For Nothing?</button>
         <button class="tablinks sideb" onclick="openCity(event, 'Swimming')">Swimming</button>
         <button class="tablinks sideb" onclick="openCity(event, 'Paris')">Life Cycle</button>
-        <button class="tablinks sideb" onclick="openCity(event, 'extinct')">Penguins Are Going EXTINCT</button>
+        <button class="tablinks sideb" onclick="openCity(event, 'extinct')">In The Red</button>
+        <button class="tablinks sideb" onclick="openCity(event, 'diet')">What’s On The Menu</button>
         <button class="tablinks sideb" onclick="openCity(event, 'gallery')">Image Gallery</button>
         <button class="tablinks sideb" onclick="openCity(event, 'fun-facts')">Fun Facts</button>
         <button class="tablinks sideb" onclick="openCity(event, 'Tokyo')">What Do you Think?</button>
@@ -50,7 +47,7 @@
     </div>
 
     <div id="Londen" class="tabcontent sideb">
-        <h3 class = "headings">Introduction</h3>
+        <h3 class = "headings">Tall, Taller, Tallest:</h3>
             <img  class = "penguin-baby" src = "penguin-baby.png">
         <p>So I bet that you think that emperor penguins are just regular penguins and they have black and white feathers.
         But if you think I am wrong here is a quick example of how cool emperor penguins. So if you took an emperor penguin and an average 9-year-old.
@@ -132,7 +129,7 @@
 
     <div id="extinct" class="tabcontent sideb">
         <img  class = "penguin-exetinct" src = "penguin-exetinct.png">
-        <h3 class = "headings">Penguins Are going EXTINCT!</h3>
+        <h3 class = "headings">In The Red:</h3>
             <p>here are somethings you can do to stop it:</p>
         <ol>
                 <li>Speak up! ...</li>
@@ -144,6 +141,17 @@
                 <li>Buy better bulbs. ...<br/></li>
                 <li>Pull the plug(s).<br/></li>
             </ol>
+    </div>
+
+    <div id="diet" class="tabcontent sideb">
+        <img  class = "penguin-exetinct" src = "krill.png">
+        <h3 class = "headings">What’s On The Menu</h3>
+        <p>Emperor penguins go in the sea to hunt.
+            But something that amazes me is that they go into the sea for around 3 months!!!
+            Now you might wonder what they are doing at this time. Well they are collecting food.
+            Now this might lead you to the question: what do they eat? Well the answer is krill, fish, squid.
+            But sometimes the penguins will senak in a snack or their own while there.
+        </p>
     </div>
 
     <div id="gallery" class="tabcontent sideb">

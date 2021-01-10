@@ -24,6 +24,8 @@
             word-spacing:0.3em;
             letter-spacing:0.02em;
             text-align:center;
+            transition-property: background-color;
+            transition-duration: 750ms;
         }
 
         .topBar{
