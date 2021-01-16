@@ -1,0 +1,23 @@
+.baby-penguin-game{
+position: absolute;
+  top: 425px;
+  left: 170px;
+  max-height: 20px;
+  transition-delay:750ms;
+  transition-timing-function: ease;
+  transition: max-height 750ms 750ms ease-in;
+  transition-duration: 750ms;
+  transition-property: max-height;
+}
+
+.baby-penguin-game:hover {
+  max-height: 120px;
+  }
+
+  img.baby-penguin-game:hover{
+    cursor:pointer;
+  }
+
+  .background-game{
+    height:230px;
+  }
