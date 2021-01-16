@@ -3,108 +3,127 @@
         font-family: Arial;
         height: 100%;
         background-color:white;
-          transition-property: background-color;
-          transition-duration: 750ms;
         }
 
 
-            body{
-            border:30px solid green;
-            margin:0px;
-            padding:0px;
-            }
+.tabcontent{
 
-            h1 {
-                color:rgb(0,111,0);
-                letter-spacing:0.2em;
-             }
+}
+body{
+    margin:0px;
+    padding:0px;
+    height:100%;
+}
 
-            h2 {
-                color: green;
-                letter-spacing:0.1em;
-            }
-            .form {
-                text-align: center;
-            }
-            #form1 {
-                text-align:center;
-            }
-            #form2 {
-             text-align:center;
-            }
+h1 {
+    color:rgb(0,111,0);
+    letter-spacing:0.2em;
+}
+
+h2 {
+    color: green;
+    letter-spacing:0.1em;
+}
+.form {
+    text-align: center;
+}
 
 
-          #article{
-             float:left;
-             margin:10% 25% 25% 25%;
-             padding:5px 5px 5px 5px;
-             width:50%;
-             overflow-y:auto;
-             background-color:white;
-             box-align:center;
 
-          }
-          #form1{
-            float:left;
-             margin:10% 25% 25% 25%;
-             padding:5px 5px 5px 5px;
-             width:50%;
-             overflow-y:auto;
-             background-color:white;
-             box-align:center;
+#article{
+     float:left;
+      border:1px solid black;
+     margin:10% 25% 5% 25%;
+     padding:5px 5px 5px 5px;
+     width:50%;
+     overflow-y:auto;
+     background-color:white;
+     box-align:center;
 
-          }
-           .logo{
-            float:right;
+}
+#about{
+     float:left;
+      border:1px solid black;
+     margin:10% 25% 5% 25%;
+     padding:5px 5px 5px 5px;
+     width:50%;
+     overflow-y:auto;
+     background-color:white;
+     box-align:center;
 
-            margin:5px 5px 0px 5px;
-            padding:0px 0px 5px 5px;
-            width:15%;
-            height:25%;
+}
+#form1{
+    float:left;
+     border:1px solid black;
+     margin:10% 25% 25% 25%;
+     padding:5px 5px 5px 5px;
+     width:50%;
+     overflow-y:auto;
+     background-color:white;
+     box-align:center;
 
-            background-color:white;
-            text-align:right;
+}
+#form2{
+    float:left;
+    border:1px solid black;
+     margin:1% 25% 5% 25%;
+     padding:5px 5px 5px 5px;
+     width:50%;
+     overflow-y:auto;
+     background-color:white;
+     box-align:center;
+}
+.logo{
+    float:right;
 
-            }
-            .topbar{
-            width:100%;
-            height:10%;
-            border:none;
-            background-color:white;
-            text-align:center;
-            top:0px;
-            left:0px;
-            margin:0px;
-            font-size:20px;
-            border:none;
+    margin:5px 5px 0px 5px;
+    padding:0px 0px 5px 5px;
+    width:15%;
+    height:25%;
 
-            }
-             .
-             a.link{
-               text-decoration: none;
-             }
-             button{
-                border:none;
-                background-color:rgb(220,220,220);
-                padding:1%;
-                height:100%
-                width:100%
-                font-size:20px;
-                border:3px solid black;
-                transition-duration: 1s;
+    background-color:white;
+    text-align:right;
 
+}
+.topbar{
+    width:100%;
+    height:10%;
+    border:none;
+    background-color:white;
+    text-align:center;
+    top:0px;
+    left:0px;
+    margin:0px;
+    font-size:20px;
+    border:none;
 
-             }
-             /* Change background color of buttons on hover */
-                 .tab button:hover {
-                   background-color: gray;
-                 }
+}
 
-                 /* Create an active/current "tab button" class */
-                 .tab button.active {
-                   background-color: white;
+ a.link{
+   text-decoration: none;
+ }
+ button{
+    border:none;
+    background-color:rgb(220,220,220);
+    padding:1%;
+    height:100%
+    width:100%
+    font-size:20px;
+    border:3px solid black;
+    transition-duration: 1s;
 
 
-                 }
+ }
+
+ .tab button:hover {
+   background-color: gray;
+ }
+
+
+ .tab button.active {
+   background-color: white;
+
+
+ }
 
 
