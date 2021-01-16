@@ -16,126 +16,125 @@
             <button class="tablinks sideb" onclick="openCity(event, 'form1')">Uploading Station</button>
             <button class="tablinks sideb" onclick="openCity(event, 'form2')">Winter Fun Form</button>
         </div>
+        <div class="table">
+            <div id="intro" class="tabcontent sideb" >
+                <main id="article">
 
-        <div id="intro" class="tabcontent sideb" >
-            <main id="article">
+                    <header>
+                        <h1>Welcome to the Awesome Club!!!</h1>
+                    </header>
+                    <article id="latest-post">
+                        <h2>Happy New Year/New Year's Eve!</h2>
+                        <p> Hello everyone! What are you going to do? My family is going to watch the ball drop on TV
+                            (You can Not go to Times Square due to COVID_19) We are also going to play ping-pong and Wii U! What are you going to do? Upload a picture in the Uploading station!
+                            If you are stumpped of what to do click the Winter Fun button! Happy 2021!-<i> Adhithya Yuvaraj Dec 31 2020 - Jan 9th 2021</i></p>
+                    </article>
+                    <figure  class="logo">
+                        <img src="Logo.png" alt="The logo. A smiley face. Has red 'Awesome' on the top and bottom" width="100%" height="100%">
 
-                <header>
-                    <h1>Welcome to the Awesome Club!!!</h1>
-                </header>
-                <article id="latest-post">
-                    <h2>Happy New Year/New Year's Eve!</h2>
-                    <p> Hello everyone! What are you going to do? My family is going to watch the ball drop on TV
-                        (You can Not go to Times Square due to COVID_19) We are also going to play ping-pong and Wii U! What are you going to do? Upload a picture in the Uploading station!
-                        If you are stumpped of what to do click the Winter Fun button! Happy 2021!-<i> Adhithya Yuvaraj Dec 31 2020 - Jan 9th 2021</i></p>
-                </article>
-                <figure  class="logo">
-                    <img src="Logo.png" alt="The logo. A smiley face. Has red 'Awesome' on the top and bottom" width="100%" height="100%">
+                    </figure>
 
-                </figure>
-
-            </main>
-        </div>
-        <div id="about" class="tabcontent sideb" >
-            <main id="article1">
-
-
-                <article >
-                    <h2>What is the Awesome Club about?</h2>
-                    <p>The Awesome Club is a place where you make Awesome things and share them to the world. A little awesomeness goes a lon way. This website is made
-                    by Adhithya Yuvaraj born on June 10th 2009.</p>
-                </article>
+                </main>
+            </div>
+            <div id="about" class="tabcontent sideb" >
+                <main id="article1">
 
 
-            </main>
-        </div>
+                    <article >
+                        <h2>What is the Awesome Club about?</h2>
+                        <p>The Awesome Club is a place where you make Awesome things and share them to the world. A little awesomeness goes a lon way. This website is made
+                        by Adhithya Yuvaraj born on June 10th 2009.</p>
+                    </article>
 
-        <div id="form1" class="tabcontent sideb" style="display:block;">
-            <div class="form">
-                <form action="form.html" method="GET" class="form" id="upload-picture">
-                    <h3>Upload one of your hoilday crafts/decorations. We might share them to the communitity!  All questions are reqiured. </h3><br/>
-                    <br/>
-                    <label for="Upload">Upload your picture here!!!</label>
-                    <br>
-                    <input type="file" id="Upload" name="Upload" value="Browse" required>
-                    <br>
-                    <input type="text" value="Write your name!" id="name" name="name">
-                    <br/>
-                    <input type="submit" value="submit(It will be uploaded!)">
-                </form>
+
+                </main>
             </div>
 
-        </div>
+            <div id="form1" class="tabcontent sideb" style="display:block;">
+                <div class="form">
+                    <form action="form.html" method="GET" class="form" id="upload-picture">
+                        <h3>Upload one of your hoilday crafts/decorations. We might share them to the communitity!  All questions are reqiured. </h3><br/>
+                        <br/>
+                        <label for="Upload">Upload your picture here!!!</label>
+                        <br>
+                        <input type="file" id="Upload" name="Upload" value="Browse" required>
+                        <br>
+                        <input type="text" value="Write your name!" id="name" name="name">
+                        <br/>
+                        <input type="submit" value="submit(It will be uploaded!)">
+                    </form>
+                </div>
 
-        <div id="form2" class="tabcontent sideb" style="display:block;">
-            <div class="form">
-                <form action="form.html" method="GET">
-                    <h2>Try to come up with as many ideas as you can! Write and tick of all the ones you want to do!</h2>
-
-                    <br>
-                    <section>
-                        <span>Do you want to do some fun things over break?</span>
-                        <br>
-                        <input type="radio" id="yes" name="yes" value="Yes" required >
-                        <label for="yes">Yes! :)</label>
-                        <br>
-                        <input type="radio" id="no" name="yes" value="Yes" required >
-                        <label for="no">No(You are going to miss out!) :(</label>
-                    </section>
-                    <br>
-                    <section class="Memories">
-                        <label for="Memories">What winter things have you done in the past? Write 'none' if you do not have anything.</label>
-                        <br>
-                        <textarea id="Memories" name="Memories" rows="5" cols="50" required minlength="4" maxlength="500" ></textarea>
-                    </section>
-                    <br>
-                    <section>
-                        <label for="To-do-list">How many things would you want to do this winter?</label>
-                        <input  type="number" id="To-do-list" name="To-do-list" placeholder="type a number" min="0" max="100" required >
-                    </section>
-                    <br>
-                    <section>
-                        <span>What crafts look fun for you?</span>
-                        <nav>
-                            <br>
-                            <input type="checkbox" id="check" name="check"  value="3-D Snowflake" >
-                            <label for="check">3-D Snowflake <a href="https://www.youtube.com/watch?v=lT2oeNkTOAk">Click Here!</a></label>
-                            <br>
-                            <input type="checkbox" id="check1" name="check"  value="3-D Christmas tree">
-                            <label for="check2">3-D Christmas tree <a href="https://www.youtube.com/watch?v=TZAsOQiZMEs">Click Here!</a></label>
-                            <br>
-                            <input type="checkbox" id="check2" name="check"  value="Origami Santa" >
-                            <label for="check2">Snowman chain <a href="https://www.youtube.com/watch?v=FSVBIkCTx08">Click Here!</a></label>
-                            <br>
-                        </nav>
-                    </section>
-                    <br>
-                    <section>
-                        <span> What things will you do with your family? Can you think of any other things to do? Like have a gift giving event or stay up till 12:00am on New Year's Eve?</span>
-                        <br>
-                        <textarea id="celebrate!" name="celebrate!" rows="5" cols="50" required minlength="15" maxlength="1000" ></textarea>
-                        <label for="celebrate!"></label>
-                    </section>
-                    <br>
-                    <section>
-                        <span>Now narrow down three things you will do over the break with your family!</span>
-                        <br>
-                        <label for="final">Write three things that you will do by yourself. Use a minimum of 15 words!</label>
-                        <br>
-                        <textarea id="final" name="final" rows="5" cols="50" required minlength="15" maxlength="300" ></textarea>
-                        <br>
-                        <label for="final1">Write three things that you will do with your family.Use a minimum of 15 words!</label>
-                        <br>
-                        <textarea id="final1" name="final1" rows="5" cols="50" required minlength="15" maxlength="300" ></textarea>
-                    </section>
-                    <br>
-                    <section>
-                        <input value="submit" type="submit">
-                    </section>
-                </form>
             </div>
 
+            <div id="form2" class="tabcontent sideb" style="display:block;">
+                <div class="form">
+                    <form action="form.html" method="GET">
+                        <h2>Try to come up with as many ideas as you can! Write and tick of all the ones you want to do!</h2>
 
+                        <br>
+                        <section>
+                            <span>Do you want to do some fun things over break?</span>
+                            <br>
+                            <input type="radio" id="yes" name="yes" value="Yes" required >
+                            <label for="yes">Yes! :)</label>
+                            <br>
+                            <input type="radio" id="no" name="yes" value="Yes" required >
+                            <label for="no">No(You are going to miss out!) :(</label>
+                        </section>
+                        <br>
+                        <section class="Memories">
+                            <label for="Memories">What winter things have you done in the past? Write 'none' if you do not have anything.</label>
+                            <br>
+                            <textarea id="Memories" name="Memories" rows="5" cols="50" required minlength="4" maxlength="500" ></textarea>
+                        </section>
+                        <br>
+                        <section>
+                            <label for="To-do-list">How many things would you want to do this winter?</label>
+                            <input  type="number" id="To-do-list" name="To-do-list" placeholder="type a number" min="0" max="100" required >
+                        </section>
+                        <br>
+                        <section>
+                            <span>What crafts look fun for you?</span>
+                            <nav>
+                                <br>
+                                <input type="checkbox" id="check" name="check"  value="3-D Snowflake" >
+                                <label for="check">3-D Snowflake <a href="https://www.youtube.com/watch?v=lT2oeNkTOAk">Click Here!</a></label>
+                                <br>
+                                <input type="checkbox" id="check1" name="check"  value="3-D Christmas tree">
+                                <label for="check2">3-D Christmas tree <a href="https://www.youtube.com/watch?v=TZAsOQiZMEs">Click Here!</a></label>
+                                <br>
+                                <input type="checkbox" id="check2" name="check"  value="Origami Santa" >
+                                <label for="check2">Snowman chain <a href="https://www.youtube.com/watch?v=FSVBIkCTx08">Click Here!</a></label>
+                                <br>
+                            </nav>
+                        </section>
+                        <br>
+                        <section>
+                            <span> What things will you do with your family? Can you think of any other things to do? Like have a gift giving event or stay up till 12:00am on New Year's Eve?</span>
+                            <br>
+                            <textarea id="celebrate!" name="celebrate!" rows="5" cols="50" required minlength="15" maxlength="1000" ></textarea>
+                            <label for="celebrate!"></label>
+                        </section>
+                        <br>
+                        <section>
+                            <span>Now narrow down three things you will do over the break with your family!</span>
+                            <br>
+                            <label for="final">Write three things that you will do by yourself. Use a minimum of 15 words!</label>
+                            <br>
+                            <textarea id="final" name="final" rows="5" cols="50" required minlength="15" maxlength="300" ></textarea>
+                            <br>
+                            <label for="final1">Write three things that you will do with your family.Use a minimum of 15 words!</label>
+                            <br>
+                            <textarea id="final1" name="final1" rows="5" cols="50" required minlength="15" maxlength="300" ></textarea>
+                        </section>
+                        <br>
+                        <section>
+                            <input value="submit" type="submit">
+                        </section>
+                    </form>
+                </div>
+            </div>
         </div>
         <script src = "../Arjun/penguin/sidebar.js"></script>
     </div>
