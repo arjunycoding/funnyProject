@@ -6,9 +6,7 @@
         }
 
 
-.tabcontent{
 
-}
 body{
     margin:0px;
     padding:0px;
@@ -32,7 +30,7 @@ h2 {
 
 #article{
      float:left;
-      border:1px solid black;
+      border:5px solid black;
      margin:10% 25% 5% 25%;
      padding:5px 5px 5px 5px;
      width:50%;
@@ -43,7 +41,7 @@ h2 {
 }
 #about{
      float:left;
-      border:1px solid black;
+      border:5px solid black;
      margin:10% 25% 5% 25%;
      padding:5px 5px 5px 5px;
      width:50%;
@@ -54,7 +52,7 @@ h2 {
 }
 #form1{
     float:left;
-     border:1px solid black;
+     border:5px solid black;
      margin:10% 25% 25% 25%;
      padding:5px 5px 5px 5px;
      width:50%;
@@ -65,7 +63,7 @@ h2 {
 }
 #form2{
     float:left;
-    border:1px solid black;
+    border:5px solid black;
      margin:1% 25% 5% 25%;
      padding:5px 5px 5px 5px;
      width:50%;
