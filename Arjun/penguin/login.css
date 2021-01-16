@@ -64,12 +64,6 @@ input.login{
             float: left;
         }
 
-        body{
-             width:70%;
-             font-family:"Comic Sans MS" , Helvetica;
-             background:lightBlue;
-         }
-
 a:link {
      text-decoration: none;
      color:white;
