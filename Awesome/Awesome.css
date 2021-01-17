@@ -39,6 +39,7 @@
          overflow-y:auto;
          background-color:white;
          box-align:center;
+         border-radius:30px;
 
     }
     #about{
@@ -50,6 +51,7 @@
          overflow-y:auto;
          background-color:white;
          box-align:center;
+         border-radius:30px;
 
     }
     #form1{
@@ -61,6 +63,7 @@
          overflow-y:auto;
          background-color:white;
          box-align:center;
+         border-radius:30px;
 
     }
     #form2{
@@ -72,13 +75,16 @@
          overflow-y:auto;
          background-color:white;
          box-align:center;
+         border-radius:30px;
     }
     .logo{
         float:right;
+        border:3px solid black
         margin:5px 5px 0px 5px;
         padding:0px 0px 5px 5px;
         width:15%;
         height:25%;
+        border-radius:30px;
     }
 
 
