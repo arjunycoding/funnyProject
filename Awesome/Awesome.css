@@ -5,6 +5,9 @@
             background-color:white;
             margin:3px;
     }
+    * {
+      box-sizing: border-box;
+    }
 
     h1 {
         color:rgb(0,111,0);
@@ -39,7 +42,7 @@
     #article{
          float:left;
          border:5px solid black;
-         margin:10% 25% 5% 25%;
+         margin:2% 25% 5% 25%;
          padding:5px 5px 5px 5px;
          width:50%;
          overflow-y:auto;
@@ -51,7 +54,7 @@
     #about{
          float:left;
           border:5px solid black;
-         margin:10% 25% 5% 25%;
+         margin:2% 25% 5% 25%;
          padding:5px 5px 5px 5px;
          width:50%;
          overflow-y:auto;
@@ -63,7 +66,7 @@
     #form1{
         float:left;
          border:5px solid black;
-         margin:10% 25% 25% 25%;
+         margin:2% 25% 5% 25%;
          padding:5px 5px 5px 5px;
          width:50%;
          overflow-y:auto;
@@ -76,7 +79,7 @@
     #form2{
         float:left;
         border:5px solid black;
-         margin:1% 25% 5% 25%;
+         margin:2% 25% 5% 25%;
          padding:5px 5px 5px 5px;
          width:50%;
          overflow-y:auto;
@@ -85,13 +88,13 @@
          border-radius:30px;
     }
     .logo{
-        float:right;
+    float:right;
+        margin:1% 45%;
         border:3px solid black
         margin:5px 5px 0px 5px;
         padding:0px 0px 5px 5px;
-        width:15%;
-        height:25%;
-        border-radius:30px;
+        width:10%;
+
     }
 
 
@@ -109,6 +112,16 @@
          font-size:20px;
          border:none;
 
+
+     }
+     .me{
+        float:right;
+        border:3px solid black
+        margin:5px 5px 0px 5px;
+        padding:0px 0px 5px 5px;
+        width:15%;
+        height:25%;
+        border-radius:30px;
      }
      button{
         border:none;
@@ -134,6 +147,8 @@
 
      .tab button.active {
        background-color: white;
+       border:5px solid green;
+       border-radius:10px;
 
 
      }
