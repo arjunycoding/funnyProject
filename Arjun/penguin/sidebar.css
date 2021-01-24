@@ -37,6 +37,7 @@
       background-color: #E8E8E8;
       transition-property: background-color;
       transition-duration: 750ms;
+      border-bottom:2px solid darkblue;
     }
 
     /* Create an active/current "tab button" class */
