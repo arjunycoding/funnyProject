@@ -87,6 +87,18 @@
          box-align:center;
          border-radius:30px;
     }
+    #games{
+        float:left;
+        border:5px solid black;
+         margin:2% 25% 5% 25%;
+         padding:5px 5px 5px 5px;
+         width:50%;
+         overflow-y:auto;
+         background-color:white;
+         box-align:center;
+         border-radius:30px;
+
+    }
     .logo{
     float:right;
         margin:1% 45%;
@@ -157,5 +169,38 @@
 
 
      }
-     p
+     .game {
+       position: relative;
+       display: inline-block;
+       height: 60%;
+     }
+
+     .game img {
+       cursor: pointer;
+     }
+
+     .game .safari {
+       margin-top: 50px;
+       height: 430.188px;
+       width: 573.578px;
+     }
+
+     .game .gazelle {
+       position: absolute;
+       top: 260px;
+       left: 231px;
+       z-index:1;
+
+       transition-property: max-height;
+       max-height: 10px;
+
+        transition:max-height 750ms ease-in 750ms;
+     }
+
+     .game .gazelle:hover {
+       max-height: 180px;
+       z-index: 2;
+
+     }
+
 
