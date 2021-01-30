@@ -45,16 +45,16 @@ while (i < 13) {
   i++;
 }
 
-document.getElementById('board1').innerHTML = msgOne;
-document.getElementById('board2').innerHTML = msgTwo;
-document.getElementById('board3').innerHTML = msgThree;
-document.getElementById('board4').innerHTML = msgFour;
-document.getElementById('board5').innerHTML = msgFive;
-document.getElementById('board6').innerHTML = msgSix;
-document.getElementById('board7').innerHTML = msgSeven;
-document.getElementById('board8').innerHTML = msgEight;
-document.getElementById('board9').innerHTML = msgNine;
-document.getElementById('board10').innerHTML = msgTen;
-document.getElementById('board11').innerHTML = msgEleven;
-document.getElementById('board12').innerHTML = msgTwelve;
+document.getElementById('board').innerHTML = msgOne;
+//document.getElementById('board').innerHTML = msgTwo;
+//document.getElementById('board').innerHTML = msgThree;
+//document.getElementById('board').innerHTML = msgFour;
+//document.getElementById('board').innerHTML = msgFive;
+//document.getElementById('board').innerHTML = msgSix;
+//document.getElementById('board').innerHTML = msgSeven;
+//document.getElementById('board').innerHTML = msgEight;
+//document.getElementById('board').innerHTML = msgNine;
+//document.getElementById('board').innerHTML = msgTen;
+//document.getElementById('board').innerHTML = msgEleven;
+//document.getElementById('board').innerHTML = msgTwelve;
 
