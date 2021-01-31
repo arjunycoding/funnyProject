@@ -1,3 +1,27 @@
-body{
-    background:black;
-}
+@import url(http://fonts.googleapis.com/css?family=Wellfleet);
+@import url(https://fonts.googleapis.com/css2?family=Handlee&display=swap);
+
+body {
+	background-color: #fecc6f;
+	color: #fff;
+    font-family: 'Handlee', Wellfleet, serif;
+    font-size: 150%;
+    margin: 0px 0px 0px 0px;
+	}
+#teacher {
+	float:right;
+	margin:0px 30px 0px 0px;
+	}
+
+.board{
+    background-color: #425a5a;
+    border: 25px solid #523620;
+    border-radius: 20px;
+    padding: 40px 20px;
+    height: 370px;
+    width: 600px;
+    text-align: center;
+    color:white;
+    overflow-x:hidden;
+    overflow-y:auto;
+    }
