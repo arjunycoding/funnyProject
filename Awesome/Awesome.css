@@ -127,6 +127,8 @@
     border-right:5px solid pink;
     border-left:5px solid pink;
     border-radius:20px;
+    margin:3px;
+    padding:3px;
     }
     .thank{
     width:50%
