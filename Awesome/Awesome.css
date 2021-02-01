@@ -74,6 +74,7 @@
              box-align:center;
              border-radius:30px;
 
+
         }
     #form1{
         float:left;
@@ -120,6 +121,13 @@
         width:10%;
 
     }
+    .pic{
+    border-top:5px solid red;
+    border-bottom:5px solid red;
+    border-right:5px solid pink;
+    border-left:5px solid pink;
+    border-radius:20px;
+    }
     .thank{
     width:50%
     height:30%;
@@ -165,6 +173,9 @@
         border-radius:10px;
 
 
+     }
+     ul, li{
+     font-size:20px;
      }
 
 
