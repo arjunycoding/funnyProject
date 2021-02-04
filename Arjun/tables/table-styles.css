@@ -1,10 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Wellfleet);
 @import url(https://fonts.googleapis.com/css2?family=Handlee&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Pangolin&display=swap);
 
 body {
 	background-color: #fecc6f;
 	color: #fff;
-    font-family: 'Handlee', Wellfleet, serif;
+    font-family: 'Wellfleet',Pangolin,Gloria Hallelujah, Handlee, Wellfleet, serif;
     font-size: 150%;
     margin: 0px 0px 0px 0px;
 	}
@@ -20,8 +22,24 @@ body {
     padding: 40px 20px;
     height: 370px;
     width: 600px;
+    float:center;
     text-align: center;
     color:white;
     overflow-x:hidden;
     overflow-y:auto;
+    margin: 70px auto 10px auto;
     }
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+.arjun{
+	font-family:"Comic Sans MS";
+	background-color:#8D0000;
+	color:white;
+	border: 3px solid #00608D;
+	border-radius:50px;
+	width:200px;
+	height:150;
+	text-align:center;
+	margin-left:10px;
+	letter-spacing: 2px;
+}
