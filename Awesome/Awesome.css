@@ -63,6 +63,19 @@
          border-radius:30px;
 
     }
+     #extra{
+             float:left;
+              border:5px solid black;
+             margin:2% 25% 23% 25%;
+             padding:5px 5px 5px 5px;
+             width:50%;
+             overflow-y:auto;
+             background-color:white;
+             box-align:center;
+             border-radius:30px;
+
+
+        }
     #form1{
         float:left;
          border:5px solid black;
@@ -107,6 +120,13 @@
         padding:0px 0px 5px 5px;
         width:10%;
 
+    }
+    .pic{
+    border-top:5px solid red;
+    border-bottom:5px solid red;
+    border-right:5px solid pink;
+    border-left:5px solid pink;
+    border-radius:20px;
     }
     .thank{
     width:50%
@@ -153,6 +173,9 @@
         border-radius:10px;
 
 
+     }
+     ul, li{
+     font-size:20px;
      }
 
 
