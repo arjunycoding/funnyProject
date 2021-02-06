@@ -29,17 +29,17 @@ body {
     overflow-y:auto;
     margin: 70px auto 10px auto;
     }
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 
 .arjun{
-	font-family:"Comic Sans MS";
+    font-family: 'cursive';
 	background-color:#8D0000;
 	color:white;
 	border: 3px solid #00608D;
 	border-radius:50px;
-	width:200px;
-	height:150;
-	text-align:center;
-	margin-left:10px;
+    width:30%;
+    margin-left:35%;
+    overflow-x:hidden;
+    overflow-y:auto;
+    padding:5px;
 	letter-spacing: 2px;
 }
