@@ -9,6 +9,7 @@
             word-spacing:0.3em;
             letter-spacing:0.02em;
             text-align:center;
+            cursor:pointer;
         }
         .topb{
             font-size:12px;

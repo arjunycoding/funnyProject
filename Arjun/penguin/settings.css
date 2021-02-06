@@ -41,4 +41,24 @@ body{
     text-align:center;
     width:1000px;
     margin:2% 20%;
+    border-radius:15px;
+}
+.setting-heading {
+    color:teal;
+    font-family: cursive;
+    text-transform: capitalize;
+    font-size:45px;
+}
+.hr-line{
+    width:90%;
+    text-align:center;
+    height: 2px;
+    border: none;
+    margin-left:10;
+    background-color: red;
+}
+
+.pallet{
+    width:100px;
+    margin:1% 45%;
 }
