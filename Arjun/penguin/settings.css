@@ -1,0 +1,64 @@
+body{
+    font-family:"Comic Sans MS" , Helvetica;
+ }
+.dot {
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    display:inline-block;
+    cursor:pointer;
+}
+.red-dot {
+    background-color:red;
+}
+.orange-dot {
+    background-color:orange;
+}
+.yellow-dot {
+    background-color:yellow;
+}
+.green-dot {
+    background-color:green;
+}
+.blue-dot {
+    background-color:blue;
+}
+.light-blue-dot {
+    background-color:lightBlue;
+}
+.purple-dot {
+    background-color:purple;
+}
+.pink-dot {
+    background-color:pink;
+}
+.black-dot {
+    background:black;
+}
+.settings{
+    border: 2px solid black;
+    background:white;
+    text-align:center;
+    width:1000px;
+    margin:2% 20%;
+    border-radius:15px;
+}
+.setting-heading {
+    color:teal;
+    font-family: cursive;
+    text-transform: capitalize;
+    font-size:45px;
+}
+.hr-line{
+    width:90%;
+    text-align:center;
+    height: 2px;
+    border: none;
+    margin-left:10;
+    background-color: red;
+}
+
+.pallet{
+    width:100px;
+    margin:1% 45%;
+}

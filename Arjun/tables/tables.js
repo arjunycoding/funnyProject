@@ -1,4 +1,4 @@
-var table = 4;
+var table = prompt("Please enter any number(1-12)", "1");
 var operator = prompt("Please enter any operator(addition, subtraction, multiplication, or division)", "addition");
 var i;
 var is = 1;
@@ -6,6 +6,15 @@ var im = 1;
 var id = 1;
 var msg = '';
 
+//if (operator === 'addition') {
+//  // Do addition
+//  i = 1;
+//  while (i < 11) {
+//    msg += i + ' + ' + table + ' = ' + (i + table) + '<br />';
+//    i++;
+//    (i + table).toString();
+//  }
+//}
 if (operator === 'addition') {
   // Do addition
   i = 1;
