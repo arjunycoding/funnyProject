@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .dot{
+            height:25px;
+            width:25px;
+            border-radius:50%;
+            display: inline-block;
+            cursor:pointer;
+            border:3px solid black;
+        }
+        .white{
+            background-color:white;
+            color:black;
+
+        }
+        .black{
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function color(bgcolor){
+            document.getElementsByTagName('body')[0].className = bgcolor;
+        }
+    </script>
+    <div style="background-color:white;">
+    <span class="dot white" onClick="color('white')"></span>
+    <span class="dot black" onClick="color('black')"></span>
+    </div>
+    <h1> Hello!</h1>
+</body>
+</html>

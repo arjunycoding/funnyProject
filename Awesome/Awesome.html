@@ -20,6 +20,7 @@
             <button class="tablinks sideb" onclick="openCity(event, 'form1')">Uploading Station</button>
             <button class="tablinks sideb" onclick="openCity(event, 'form2')">Valentine Form</button>
             <button class="tablinks sideb" onclick="openCity(event, 'games')">Spot the LOGO</button>
+            <button class="tablinks sideb" onclick="openCity(event, 'set')">Settings</button>
         </div>
         <div class="tab">
             <div id="intro" class="tabcontent sideb" >
@@ -147,12 +148,23 @@
                 </div>
             </div>
             <div class="tabcontent sideb" id="games">
-                <h2>SPOT the Logo!</h2>
+                <h2>Spot the LOGO!</h2>
                 <p>To find the logo, keep your mouse over the center where you think the image of the logo will be. It might take 3 seconds!
                 Thanks to Codecademy for the safari picture and the game idea!</p>
                 <div class="game">
                     <img class="gazelle" src="Logo.png" alt="gazelle">
                     <img class="safari" src="	https://content.codecademy.com/courses/freelance-1/unit-6/safari.jpg" alt="safari">
+                </div>
+            </div>
+            <div class="tabcontent sideb" id="set">
+                <div>
+                    <p>Click the two images to change the background color!</p>
+                    <br>
+                    <span class="dot white white-border" onClick="color('white')"></span>
+                    <span class="dot black black-border" onClick="color('black')"></span>
+                    <br>
+                    <p>Click the different numbers to increase or decrease the font size!</p>
+                    <br>
                 </div>
             </div>
         </div>
@@ -162,6 +174,12 @@
             <h2>Awesome Club &copy 2021</h2>
         </footer>
         <script src = "../Arjun/penguin/sidebar.js"></script>
+                <script>
+                    function color(bgcolor){
+                        document.getElementsByTagName('html')[0].className = bgcolor;
+                        document.getElementsByTagName('body')[0].className = bgcolor;
+                    }
+                </script>
 
 
     </body>
