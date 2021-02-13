@@ -62,3 +62,15 @@ body{
     width:100px;
     margin:1% 45%;
 }
+.tenpx{
+    font-size: 10px;
+}
+.twentypx{
+    font-size: 20px;
+}
+.thirtypx{
+    font-size: 30px;
+}
+.fortypx{
+    font-size: 40px;
+}
