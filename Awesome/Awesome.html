@@ -33,7 +33,7 @@
                         <h2>Hi Everyone!</h2>
                         <p> Guess what time is it? It is close to... I think you know what it is. Anyway remember, even though COVID-19 is still out their, you can exchange
                             valentine's in your house! Make little mailboxes for each of your family members on their bedroom doors, and keep cards in them! Also sneak in
-                            one or two candies... HAPPY ALMOST VALENTINE'S DAY
+                            one or two candies... HAPPY VALENTINE'S DAY
                             -<i> Adhithya Yuvaraj Jan 30 - Feb 14th 2021!</i>
                         </p>
                     </article>
@@ -115,7 +115,8 @@
                         <br>
                         <section>
                             <label for="To-do-list">Write ideas you have for valentine's day!</label>
-                            <input  type="number" id="To-do-list" name="To-do-list" placeholder="type a number" min="0" max="100" required >
+                            <br />
+                            <textarea id="To-do-list" name="Todo" rows="5" cols="50" minlength="4" maxlength="500"></textarea>
                         </section>
                         <br>
                         <section>
@@ -152,7 +153,7 @@
                 <p>To find the logo, keep your mouse over the center where you think the image of the logo will be. It might take 3 seconds!
                 Thanks to Codecademy for the safari picture and the game idea!</p>
                 <div class="game">
-                    <img class="gazelle" src="Logo.png" alt="gazelle">
+                    <img class="gazelle" src="Logo.png" alt="logo">
                     <img class="safari" src="	https://content.codecademy.com/courses/freelance-1/unit-6/safari.jpg" alt="safari">
                 </div>
             </div>
@@ -160,10 +161,9 @@
                 <div>
                     <p>Click the two images to change the background color!</p>
                     <br>
-                    <span class="dot white white-border" onClick="color('white')"></span>
-                    <span class="dot black black-border" onClick="color('black')"></span>
+                    <span class="both white white-border" onClick="color('white')"><img src="White.png" alt="Click me for white mode" width="200px"></span>
+                    <span class="both black black-border" onClick="color('black')"><img src="Black.png" alt="Click me for black mode" width="200px"></span>
                     <br>
-                    <p>Click the different numbers to increase or decrease the font size!</p>
                     <br>
                 </div>
             </div>
@@ -178,6 +178,11 @@
                     function color(bgcolor){
                         document.getElementsByTagName('html')[0].className = bgcolor;
                         document.getElementsByTagName('body')[0].className = bgcolor;
+                    }
+                </script>
+                <script>
+                    function size(fontszie){
+                        document.getElementsByTagName('body')[0].className = fontsize;
                     }
                 </script>
 
